@@ -8,7 +8,8 @@
 
 import Foundation
 import Alamofire
-class Remote: RemoteContext {
+
+class Remote: RemoteContext, Repository {
     
     func getRepositories(user: String, completion: @escaping ([CodeRepository]?, Error?) -> Void) {
         let requestConverter = Router.User(user).getUserRepositories(params: "", httpHeaders: httpHeaders())

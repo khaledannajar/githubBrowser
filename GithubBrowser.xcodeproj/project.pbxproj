@@ -22,6 +22,7 @@
 		298ECEB321E8DC3D00B98719 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298ECEB121E8DC3C00B98719 /* Router.swift */; };
 		298ECEB721E9101000B98719 /* SearchParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298ECEB621E9101000B98719 /* SearchParams.swift */; };
 		298ECEB921E9102B00B98719 /* Pageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298ECEB821E9102B00B98719 /* Pageable.swift */; };
+		298ECEBF21E9202A00B98719 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298ECEBE21E9202A00B98719 /* Repository.swift */; };
 		8DED8962966F589A78E32574 /* Pods_GithubBrowser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A8C9176CF24C1BBAF473604 /* Pods_GithubBrowser.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		298ECEB121E8DC3C00B98719 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		298ECEB621E9101000B98719 /* SearchParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchParams.swift; sourceTree = "<group>"; };
 		298ECEB821E9102B00B98719 /* Pageable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pageable.swift; sourceTree = "<group>"; };
+		298ECEBE21E9202A00B98719 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		834A3A374041720E2874FF40 /* Pods-GithubBrowser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubBrowser.release.xcconfig"; path = "Pods/Target Support Files/Pods-GithubBrowser/Pods-GithubBrowser.release.xcconfig"; sourceTree = "<group>"; };
 		8A8C9176CF24C1BBAF473604 /* Pods_GithubBrowser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GithubBrowser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC6D69578008B229E63AE18 /* Pods-GithubBrowser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubBrowser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GithubBrowser/Pods-GithubBrowser.debug.xcconfig"; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				298ECEAC21E8D59F00B98719 /* RemoteContext.swift */,
+				298ECEBE21E9202A00B98719 /* Repository.swift */,
 				298ECEAE21E8DA8600B98719 /* Remote.swift */,
 				298ECEB121E8DC3C00B98719 /* Router.swift */,
 				298ECEB021E8DC3C00B98719 /* RoutersProtocol.swift */,
@@ -259,6 +262,7 @@
 				295701B521E8709E0099D2ED /* AppDelegate.swift in Sources */,
 				298ECEAF21E8DA8600B98719 /* Remote.swift in Sources */,
 				298ECEB921E9102B00B98719 /* Pageable.swift in Sources */,
+				298ECEBF21E9202A00B98719 /* Repository.swift in Sources */,
 				298ECEA521E8884E00B98719 /* UserProfile.swift in Sources */,
 				298ECEA421E8884E00B98719 /* SearchResults.swift in Sources */,
 				298ECEA321E8884E00B98719 /* License.swift in Sources */,
