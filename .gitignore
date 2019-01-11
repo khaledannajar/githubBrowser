@@ -1,0 +1,1079 @@
+# Xcode
+#
+# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
+
+## Build generated
+build/
+DerivedData/
+
+## Various settings
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+
+## Other
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
+
+## Obj-C/Swift specific
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+## Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Swift Package Manager
+#
+# Add this line if you want to avoid checking in source code from Swift Package Manager dependencies.
+# Packages/
+# Package.pins
+# Package.resolved
+.build/
+
+# CocoaPods
+#
+# We recommend against adding the Pods directory to your .gitignore. However
+# you should judge for yourself, the pros and cons are mentioned at:
+# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
+#
+ Pods/
+
+# Carthage
+#
+# Add this line if you want to avoid checking in source code from Carthage dependencies.
+# Carthage/Checkouts
+
+Carthage/Build
+
+# fastlane
+#
+# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
+# screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://docs.fastlane.tools/best-practices/source-control/#source-control
+
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+Pods/Manifest.lock
+Pods/ActionKit/LICENSE
+Pods/ActionKit/README.md
+Pods/ActionKit/ActionKit/ActionKit.swift
+Pods/ActionKit/ActionKit/UIBarButtonItem+ActionKit.swift
+Pods/ActionKit/ActionKit/UIControl+ActionKit.swift
+Pods/ActionKit/ActionKit/UIGestureRecognizer+ActionKit.swift
+
+Pods/Alamofire/LICENSE
+Pods/Alamofire/README.md
+Pods/Alamofire/Source/AFError.swift
+Pods/Alamofire/Source/Alamofire.swift
+Pods/Alamofire/Source/DispatchQueue+Alamofire.swift
+Pods/Alamofire/Source/MultipartFormData.swift
+Pods/Alamofire/Source/NetworkReachabilityManager.swift
+Pods/Alamofire/Source/Notifications.swift
+Pods/Alamofire/Source/ParameterEncoding.swift
+Pods/Alamofire/Source/Request.swift
+Pods/Alamofire/Source/Response.swift
+Pods/Alamofire/Source/ResponseSerialization.swift
+Pods/Alamofire/Source/Result.swift
+Pods/Alamofire/Source/ServerTrustPolicy.swift
+Pods/Alamofire/Source/SessionDelegate.swift
+Pods/Alamofire/Source/SessionManager.swift
+Pods/Alamofire/Source/TaskDelegate.swift
+Pods/Alamofire/Source/Timeline.swift
+Pods/Alamofire/Source/Validation.swift
+Pods/AlamofireImage/LICENSE
+Pods/AlamofireImage/README.md
+Pods/AlamofireImage/Source/AFIError.swift
+Pods/AlamofireImage/Source/Image.swift
+Pods/AlamofireImage/Source/ImageCache.swift
+Pods/AlamofireImage/Source/ImageDownloader.swift
+Pods/AlamofireImage/Source/ImageFilter.swift
+Pods/AlamofireImage/Source/Request+AlamofireImage.swift
+Pods/AlamofireImage/Source/UIButton+AlamofireImage.swift
+Pods/AlamofireImage/Source/UIImage+AlamofireImage.swift
+Pods/AlamofireImage/Source/UIImageView+AlamofireImage.swift
+Pods/Pods.xcodeproj/project.pbxproj
+Pods/SwiftyJSON/LICENSE
+Pods/SwiftyJSON/README.md
+Pods/SwiftyJSON/Source/SwiftyJSON.swift
+Pods/Target Support Files/ActionKit/ActionKit-dummy.m
+Pods/Target Support Files/ActionKit/ActionKit-prefix.pch
+Pods/Target Support Files/ActionKit/ActionKit-umbrella.h
+Pods/Target Support Files/ActionKit/ActionKit.modulemap
+Pods/Target Support Files/ActionKit/ActionKit.xcconfig
+Pods/Target Support Files/ActionKit/Info.plist
+Pods/Target Support Files/Alamofire/Alamofire-dummy.m
+Pods/Target Support Files/Alamofire/Alamofire-prefix.pch
+Pods/Target Support Files/Alamofire/Alamofire-umbrella.h
+Pods/Target Support Files/Alamofire/Alamofire.modulemap
+Pods/Target Support Files/Alamofire/Alamofire.xcconfig
+Pods/Target Support Files/Alamofire/Info.plist
+Pods/Target Support Files/AlamofireImage/AlamofireImage-dummy.m
+Pods/Target Support Files/AlamofireImage/AlamofireImage-prefix.pch
+Pods/Target Support Files/AlamofireImage/AlamofireImage-umbrella.h
+Pods/Target Support Files/AlamofireImage/AlamofireImage.modulemap
+Pods/Target Support Files/AlamofireImage/AlamofireImage.xcconfig
+Pods/Target Support Files/AlamofireImage/Info.plist
+Pods/Target Support Files/FormValidatorSwift/FormValidatorSwift-dummy.m
+Pods/Target Support Files/FormValidatorSwift/FormValidatorSwift-prefix.pch
+Pods/Target Support Files/FormValidatorSwift/FormValidatorSwift-umbrella.h
+Pods/Target Support Files/FormValidatorSwift/FormValidatorSwift.modulemap
+Pods/Target Support Files/FormValidatorSwift/FormValidatorSwift.xcconfig
+Pods/Target Support Files/FormValidatorSwift/Info.plist
+Pods/Target Support Files/FormValidatorSwift/ResourceBundle-FormValidatorSwift-Info.plist
+Pods/Target Support Files/iProgressHUD/Info.plist
+Pods/Target Support Files/iProgressHUD/iProgressHUD-dummy.m
+Pods/Target Support Files/iProgressHUD/iProgressHUD-prefix.pch
+Pods/Target Support Files/iProgressHUD/iProgressHUD-umbrella.h
+Pods/Target Support Files/iProgressHUD/iProgressHUD.modulemap
+Pods/Target Support Files/iProgressHUD/iProgressHUD.xcconfig
+Pods/Target Support Files/Pods-jirah/Info.plist
+Pods/Target Support Files/Pods-jirah/Pods-jirah-acknowledgements.markdown
+Pods/Target Support Files/Pods-jirah/Pods-jirah-acknowledgements.plist
+Pods/Target Support Files/Pods-jirah/Pods-jirah-dummy.m
+Pods/Target Support Files/Pods-jirah/Pods-jirah-frameworks.sh
+Pods/Target Support Files/Pods-jirah/Pods-jirah-resources.sh
+Pods/Target Support Files/Pods-jirah/Pods-jirah-umbrella.h
+Pods/Target Support Files/Pods-jirah/Pods-jirah.debug.xcconfig
+Pods/Target Support Files/Pods-jirah/Pods-jirah.modulemap
+Pods/Target Support Files/Pods-jirah/Pods-jirah.release.xcconfig
+Pods/Target Support Files/SwiftyJSON/Info.plist
+Pods/Target Support Files/SwiftyJSON/SwiftyJSON-dummy.m
+Pods/Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch
+Pods/Target Support Files/SwiftyJSON/SwiftyJSON-umbrella.h
+Pods/Target Support Files/SwiftyJSON/SwiftyJSON.modulemap
+Pods/Target Support Files/SwiftyJSON/SwiftyJSON.xcconfig
+
+Pods/Localize-Swift/LICENSE
+Pods/Localize-Swift/README.md
+Pods/Localize-Swift/Sources/Localize.swift
+Pods/Localize-Swift/Sources/Localize_Swift.h
+Pods/Localize-Swift/Sources/String+LocalizeBundle.swift
+Pods/Localize-Swift/Sources/String+LocalizedBundleTableName.swift
+Pods/Localize-Swift/Sources/String+LocalizeTableName.swift
+Pods/Target Support Files/Localize-Swift/Info.plist
+Pods/Target Support Files/Localize-Swift/Localize-Swift-dummy.m
+Pods/Target Support Files/Localize-Swift/Localize-Swift-prefix.pch
+Pods/Target Support Files/Localize-Swift/Localize-Swift-umbrella.h
+Pods/Target Support Files/Localize-Swift/Localize-Swift.modulemap
+Pods/Target Support Files/Localize-Swift/Localize-Swift.xcconfig
+
+Pods/Cosmos/LICENSE
+Pods/Cosmos/README.md
+Pods/Cosmos/Cosmos/CosmosAccessibility.swift
+Pods/Cosmos/Cosmos/CosmosDefaultSettings.swift
+Pods/Cosmos/Cosmos/CosmosLayerHelper.swift
+Pods/Cosmos/Cosmos/CosmosLayers.swift
+Pods/Cosmos/Cosmos/CosmosLocalizedRating.swift
+Pods/Cosmos/Cosmos/CosmosRating.swift
+Pods/Cosmos/Cosmos/CosmosSettings.swift
+Pods/Cosmos/Cosmos/CosmosSize.swift
+Pods/Cosmos/Cosmos/CosmosText.swift
+Pods/Cosmos/Cosmos/CosmosTouch.swift
+Pods/Cosmos/Cosmos/CosmosView.swift
+Pods/Cosmos/Cosmos/StarFillMode.swift
+Pods/Cosmos/Cosmos/StarLayer.swift
+Pods/Cosmos/Cosmos/Helpers/CosmosTouchTarget.swift
+Pods/Cosmos/Cosmos/Helpers/RightToLeft.swift
+Pods/DZNEmptyDataSet/LICENSE
+Pods/DZNEmptyDataSet/README.md
+Pods/DZNEmptyDataSet/Source/UIScrollView+EmptyDataSet.h
+Pods/DZNEmptyDataSet/Source/UIScrollView+EmptyDataSet.m
+
+Pods/IQKeyboardManagerSwift/LICENSE.md
+Pods/IQKeyboardManagerSwift/README.md
+Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/IQKeyboardManager.swift
+Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/IQKeyboardReturnKeyHandler.swift
+Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Categories/IQNSArray+Sort.swift
+Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Categories/IQUIScrollView+Additions.swift
+Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Categories/IQUITextFieldView+Additions.swift
+Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Categories/IQUIView+Hierarchy.swift
+Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Categories/IQUIViewController+Additions.swift
+Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstants.swift
+Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstantsInternal.swift
+Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/IQTextView/IQTextView.swift
+Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/IQToolbar/IQBarButtonItem.swift
+Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/IQToolbar/IQInvocation.swift
+Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/IQToolbar/IQPreviousNextView.swift
+Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/IQToolbar/IQTitleBarButtonItem.swift
+Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/IQToolbar/IQToolbar.swift
+Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/IQToolbar/IQUIView+IQKeyboardToolbar.swift
+Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Resources/IQKeyboardManager.bundle/IQButtonBarArrowDown@2x.png
+Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Resources/IQKeyboardManager.bundle/IQButtonBarArrowDown@3x.png
+Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Resources/IQKeyboardManager.bundle/IQButtonBarArrowLeft@2x.png
+Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Resources/IQKeyboardManager.bundle/IQButtonBarArrowLeft@3x.png
+Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Resources/IQKeyboardManager.bundle/IQButtonBarArrowRight@2x.png
+Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Resources/IQKeyboardManager.bundle/IQButtonBarArrowRight@3x.png
+Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Resources/IQKeyboardManager.bundle/IQButtonBarArrowUp@2x.png
+Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Resources/IQKeyboardManager.bundle/IQButtonBarArrowUp@3x.png
+
+Pods/SwiftyAttributes/LICENSE
+Pods/SwiftyAttributes/README.md
+Pods/SwiftyAttributes/SwiftyAttributes/Sources/common/Attribute+Sequence.swift
+Pods/SwiftyAttributes/SwiftyAttributes/Sources/common/Attribute.swift
+Pods/SwiftyAttributes/SwiftyAttributes/Sources/common/AttributeName.swift
+Pods/SwiftyAttributes/SwiftyAttributes/Sources/common/Ligatures.swift
+Pods/SwiftyAttributes/SwiftyAttributes/Sources/common/NSAttributedString+SwiftyAttributes.swift
+Pods/SwiftyAttributes/SwiftyAttributes/Sources/common/NSMutableAttributedString+SwiftyAttributes.swift
+Pods/SwiftyAttributes/SwiftyAttributes/Sources/common/Operators.swift
+Pods/SwiftyAttributes/SwiftyAttributes/Sources/common/String+SwiftyAttributes.swift
+Pods/SwiftyAttributes/SwiftyAttributes/Sources/common/TextEffect.swift
+Pods/SwiftyAttributes/SwiftyAttributes/Sources/common/VerticalGlyphForm.swift
+Pods/SwiftyAttributes/SwiftyAttributes/Sources/common/WritingDirection.swift
+Pods/Target Support Files/Cosmos/Cosmos-dummy.m
+Pods/Target Support Files/Cosmos/Cosmos-prefix.pch
+Pods/Target Support Files/Cosmos/Cosmos-umbrella.h
+Pods/Target Support Files/Cosmos/Cosmos.modulemap
+Pods/Target Support Files/Cosmos/Cosmos.xcconfig
+Pods/Target Support Files/Cosmos/Info.plist
+Pods/Target Support Files/DZNEmptyDataSet/DZNEmptyDataSet-dummy.m
+Pods/Target Support Files/DZNEmptyDataSet/DZNEmptyDataSet-prefix.pch
+Pods/Target Support Files/DZNEmptyDataSet/DZNEmptyDataSet-umbrella.h
+Pods/Target Support Files/DZNEmptyDataSet/DZNEmptyDataSet.modulemap
+Pods/Target Support Files/DZNEmptyDataSet/DZNEmptyDataSet.xcconfig
+Pods/Target Support Files/DZNEmptyDataSet/Info.plist
+Pods/Target Support Files/IQKeyboardManagerSwift/Info.plist
+Pods/Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift-dummy.m
+Pods/Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift-prefix.pch
+Pods/Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift-umbrella.h
+Pods/Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift.modulemap
+Pods/Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift.xcconfig
+Pods/Target Support Files/RSKImageCropper/Info.plist
+Pods/Target Support Files/RSKImageCropper/RSKImageCropper-dummy.m
+Pods/Target Support Files/RSKImageCropper/RSKImageCropper-prefix.pch
+Pods/Target Support Files/RSKImageCropper/RSKImageCropper.modulemap
+Pods/Target Support Files/RSKImageCropper/RSKImageCropper.xcconfig
+Pods/Target Support Files/SwiftyAttributes/Info.plist
+Pods/Target Support Files/SwiftyAttributes/SwiftyAttributes-dummy.m
+Pods/Target Support Files/SwiftyAttributes/SwiftyAttributes-prefix.pch
+Pods/Target Support Files/SwiftyAttributes/SwiftyAttributes-umbrella.h
+Pods/Target Support Files/SwiftyAttributes/SwiftyAttributes.modulemap
+Pods/Target Support Files/SwiftyAttributes/SwiftyAttributes.xcconfig
+Pods/Target Support Files/XLPagerTabStrip/Info.plist
+Pods/Target Support Files/XLPagerTabStrip/ResourceBundle-XLPagerTabStrip-Info.plist
+Pods/Target Support Files/XLPagerTabStrip/XLPagerTabStrip-dummy.m
+Pods/Target Support Files/XLPagerTabStrip/XLPagerTabStrip-prefix.pch
+Pods/Target Support Files/XLPagerTabStrip/XLPagerTabStrip-umbrella.h
+Pods/Target Support Files/XLPagerTabStrip/XLPagerTabStrip.modulemap
+Pods/Target Support Files/XLPagerTabStrip/XLPagerTabStrip.xcconfig
+Pods/XLPagerTabStrip/LICENSE
+Pods/XLPagerTabStrip/README.md
+Pods/XLPagerTabStrip/Sources/BarPagerTabStripViewController.swift
+Pods/XLPagerTabStrip/Sources/BarView.swift
+Pods/XLPagerTabStrip/Sources/BaseButtonBarPagerTabStripViewController.swift
+Pods/XLPagerTabStrip/Sources/ButtonBarPagerTabStripViewController.swift
+Pods/XLPagerTabStrip/Sources/ButtonBarView.swift
+Pods/XLPagerTabStrip/Sources/ButtonBarViewCell.swift
+Pods/XLPagerTabStrip/Sources/ButtonCell.xib
+Pods/XLPagerTabStrip/Sources/FXPageControl.h
+Pods/XLPagerTabStrip/Sources/FXPageControl.m
+Pods/XLPagerTabStrip/Sources/IndicatorInfo.swift
+Pods/XLPagerTabStrip/Sources/PagerTabStripBehaviour.swift
+Pods/XLPagerTabStrip/Sources/PagerTabStripError.swift
+Pods/XLPagerTabStrip/Sources/PagerTabStripViewController.swift
+Pods/XLPagerTabStrip/Sources/SegmentedPagerTabStripViewController.swift
+Pods/XLPagerTabStrip/Sources/SwipeDirection.swift
+Pods/XLPagerTabStrip/Sources/TwitterPagerTabStripViewController.swift
+Pods/SwiftMessages/LICENSE.md
+Pods/SwiftMessages/README.md
+Pods/SwiftMessages/SwiftMessages/AccessibleMessage.swift
+Pods/SwiftMessages/SwiftMessages/Animator.swift
+Pods/SwiftMessages/SwiftMessages/Array+Utils.swift
+Pods/SwiftMessages/SwiftMessages/BackgroundViewable.swift
+Pods/SwiftMessages/SwiftMessages/BaseView.swift
+Pods/SwiftMessages/SwiftMessages/Error.swift
+Pods/SwiftMessages/SwiftMessages/Identifiable.swift
+Pods/SwiftMessages/SwiftMessages/MarginAdjustable+Animation.swift
+Pods/SwiftMessages/SwiftMessages/MarginAdjustable.swift
+Pods/SwiftMessages/SwiftMessages/MaskingView.swift
+Pods/SwiftMessages/SwiftMessages/MessageView.swift
+Pods/SwiftMessages/SwiftMessages/NSBundle+Utils.swift
+Pods/SwiftMessages/SwiftMessages/PassthroughView.swift
+Pods/SwiftMessages/SwiftMessages/PassthroughWindow.swift
+Pods/SwiftMessages/SwiftMessages/PhysicsAnimation.swift
+Pods/SwiftMessages/SwiftMessages/PhysicsPanHandler.swift
+Pods/SwiftMessages/SwiftMessages/Presenter.swift
+Pods/SwiftMessages/SwiftMessages/SwiftMessages.swift
+Pods/SwiftMessages/SwiftMessages/Theme.swift
+Pods/SwiftMessages/SwiftMessages/TopBottomAnimation.swift
+Pods/SwiftMessages/SwiftMessages/UIEdgeInsets+Utils.swift
+Pods/SwiftMessages/SwiftMessages/UIViewController+Utils.swift
+Pods/SwiftMessages/SwiftMessages/Weak.swift
+Pods/SwiftMessages/SwiftMessages/WindowViewController.swift
+Pods/SwiftMessages/SwiftMessages/Resources/CardView.xib
+Pods/SwiftMessages/SwiftMessages/Resources/CenteredView.xib
+Pods/SwiftMessages/SwiftMessages/Resources/errorIcon.png
+Pods/SwiftMessages/SwiftMessages/Resources/errorIcon@2x.png
+Pods/SwiftMessages/SwiftMessages/Resources/errorIcon@3x.png
+Pods/SwiftMessages/SwiftMessages/Resources/errorIconLight.png
+Pods/SwiftMessages/SwiftMessages/Resources/errorIconLight@2x.png
+Pods/SwiftMessages/SwiftMessages/Resources/errorIconLight@3x.png
+Pods/SwiftMessages/SwiftMessages/Resources/errorIconSubtle.png
+Pods/SwiftMessages/SwiftMessages/Resources/errorIconSubtle@2x.png
+Pods/SwiftMessages/SwiftMessages/Resources/errorIconSubtle@3x.png
+Pods/SwiftMessages/SwiftMessages/Resources/infoIcon.png
+Pods/SwiftMessages/SwiftMessages/Resources/infoIcon@2x.png
+Pods/SwiftMessages/SwiftMessages/Resources/infoIcon@3x.png
+Pods/SwiftMessages/SwiftMessages/Resources/infoIconLight.png
+Pods/SwiftMessages/SwiftMessages/Resources/infoIconLight@2x.png
+Pods/SwiftMessages/SwiftMessages/Resources/infoIconLight@3x.png
+Pods/SwiftMessages/SwiftMessages/Resources/infoIconSubtle.png
+Pods/SwiftMessages/SwiftMessages/Resources/infoIconSubtle@2x.png
+Pods/SwiftMessages/SwiftMessages/Resources/infoIconSubtle@3x.png
+Pods/SwiftMessages/SwiftMessages/Resources/MessageView.xib
+Pods/SwiftMessages/SwiftMessages/Resources/MessageViewIOS8.xib
+Pods/SwiftMessages/SwiftMessages/Resources/StatusLine.xib
+Pods/SwiftMessages/SwiftMessages/Resources/successIcon.png
+Pods/SwiftMessages/SwiftMessages/Resources/successIcon@2x.png
+Pods/SwiftMessages/SwiftMessages/Resources/successIcon@3x.png
+Pods/SwiftMessages/SwiftMessages/Resources/successIconLight.png
+Pods/SwiftMessages/SwiftMessages/Resources/successIconLight@2x.png
+Pods/SwiftMessages/SwiftMessages/Resources/successIconLight@3x.png
+Pods/SwiftMessages/SwiftMessages/Resources/successIconSubtle.png
+Pods/SwiftMessages/SwiftMessages/Resources/successIconSubtle@2x.png
+Pods/SwiftMessages/SwiftMessages/Resources/successIconSubtle@3x.png
+Pods/SwiftMessages/SwiftMessages/Resources/TabView.xib
+Pods/SwiftMessages/SwiftMessages/Resources/warningIcon.png
+Pods/SwiftMessages/SwiftMessages/Resources/warningIcon@2x.png
+Pods/SwiftMessages/SwiftMessages/Resources/warningIcon@3x.png
+Pods/SwiftMessages/SwiftMessages/Resources/warningIconLight.png
+Pods/SwiftMessages/SwiftMessages/Resources/warningIconLight@2x.png
+Pods/SwiftMessages/SwiftMessages/Resources/warningIconLight@3x.png
+Pods/SwiftMessages/SwiftMessages/Resources/warningIconSubtle.png
+Pods/SwiftMessages/SwiftMessages/Resources/warningIconSubtle@2x.png
+Pods/SwiftMessages/SwiftMessages/Resources/warningIconSubtle@3x.png
+Pods/Target Support Files/SwiftMessages/Info.plist
+Pods/Target Support Files/SwiftMessages/ResourceBundle-SwiftMessages-Info.plist
+Pods/Target Support Files/SwiftMessages/SwiftMessages-dummy.m
+Pods/Target Support Files/SwiftMessages/SwiftMessages-prefix.pch
+Pods/Target Support Files/SwiftMessages/SwiftMessages-umbrella.h
+Pods/Target Support Files/SwiftMessages/SwiftMessages.modulemap
+Pods/Target Support Files/SwiftMessages/SwiftMessages.xcconfig
+Pods/AlamofireObjectMapper/LICENSE
+Pods/AlamofireObjectMapper/README.md
+Pods/AlamofireObjectMapper/AlamofireObjectMapper/AlamofireObjectMapper.swift
+Pods/CircleProgressView/LICENSE.md
+Pods/CircleProgressView/README.md
+Pods/CircleProgressView/CircleProgressView/AppDelegate.swift
+Pods/CircleProgressView/CircleProgressView/CircleProgressView.swift
+Pods/CircleProgressView/CircleProgressView/ViewController.swift
+Pods/MZTimerLabel/LICENSE
+Pods/MZTimerLabel/README.md
+Pods/MZTimerLabel/MZTimerLabel/MZTimerLabel.h
+Pods/MZTimerLabel/MZTimerLabel/MZTimerLabel.m
+Pods/ObjectMapper/LICENSE
+Pods/ObjectMapper/README-CN.md
+Pods/ObjectMapper/Sources/CustomDateFormatTransform.swift
+Pods/ObjectMapper/Sources/DataTransform.swift
+Pods/ObjectMapper/Sources/DateFormatterTransform.swift
+Pods/ObjectMapper/Sources/DateTransform.swift
+Pods/ObjectMapper/Sources/DictionaryTransform.swift
+Pods/ObjectMapper/Sources/EnumOperators.swift
+Pods/ObjectMapper/Sources/EnumTransform.swift
+Pods/ObjectMapper/Sources/FromJSON.swift
+Pods/ObjectMapper/Sources/HexColorTransform.swift
+Pods/ObjectMapper/Sources/ImmutableMappable.swift
+Pods/ObjectMapper/Sources/IntegerOperators.swift
+Pods/ObjectMapper/Sources/ISO8601DateTransform.swift
+Pods/ObjectMapper/Sources/Map.swift
+Pods/ObjectMapper/Sources/MapError.swift
+Pods/ObjectMapper/Sources/Mappable.swift
+Pods/ObjectMapper/Sources/Mapper.swift
+Pods/ObjectMapper/Sources/NSDecimalNumberTransform.swift
+Pods/ObjectMapper/Sources/Operators.swift
+Pods/ObjectMapper/Sources/ToJSON.swift
+Pods/ObjectMapper/Sources/TransformOf.swift
+Pods/ObjectMapper/Sources/TransformOperators.swift
+Pods/ObjectMapper/Sources/TransformType.swift
+Pods/ObjectMapper/Sources/URLTransform.swift
+Pods/Target Support Files/AlamofireObjectMapper/AlamofireObjectMapper-dummy.m
+Pods/Target Support Files/AlamofireObjectMapper/AlamofireObjectMapper-prefix.pch
+Pods/Target Support Files/AlamofireObjectMapper/AlamofireObjectMapper-umbrella.h
+Pods/Target Support Files/AlamofireObjectMapper/AlamofireObjectMapper.modulemap
+Pods/Target Support Files/AlamofireObjectMapper/AlamofireObjectMapper.xcconfig
+Pods/Target Support Files/AlamofireObjectMapper/Info.plist
+Pods/Target Support Files/CircleProgressView/CircleProgressView-dummy.m
+Pods/Target Support Files/CircleProgressView/CircleProgressView-prefix.pch
+Pods/Target Support Files/CircleProgressView/CircleProgressView-umbrella.h
+Pods/Target Support Files/CircleProgressView/CircleProgressView.modulemap
+Pods/Target Support Files/CircleProgressView/CircleProgressView.xcconfig
+Pods/Target Support Files/CircleProgressView/Info.plist
+Pods/Target Support Files/MZTimerLabel/Info.plist
+Pods/Target Support Files/MZTimerLabel/MZTimerLabel-dummy.m
+Pods/Target Support Files/MZTimerLabel/MZTimerLabel-prefix.pch
+Pods/Target Support Files/MZTimerLabel/MZTimerLabel-umbrella.h
+Pods/Target Support Files/MZTimerLabel/MZTimerLabel.modulemap
+Pods/Target Support Files/MZTimerLabel/MZTimerLabel.xcconfig
+Pods/Target Support Files/ObjectMapper/Info.plist
+Pods/Target Support Files/ObjectMapper/ObjectMapper-dummy.m
+Pods/Target Support Files/ObjectMapper/ObjectMapper-prefix.pch
+Pods/Target Support Files/ObjectMapper/ObjectMapper-umbrella.h
+Pods/Target Support Files/ObjectMapper/ObjectMapper.modulemap
+Pods/Target Support Files/ObjectMapper/ObjectMapper.xcconfig
+Pods/Kingfisher/LICENSE
+Pods/Kingfisher/README.md
+Pods/Kingfisher/Sources/AnimatedImageView.swift
+Pods/Kingfisher/Sources/Box.swift
+Pods/Kingfisher/Sources/CacheSerializer.swift
+Pods/Kingfisher/Sources/Filter.swift
+Pods/Kingfisher/Sources/FormatIndicatedCacheSerializer.swift
+Pods/Kingfisher/Sources/Image.swift
+Pods/Kingfisher/Sources/ImageCache.swift
+Pods/Kingfisher/Sources/ImageDownloader.swift
+Pods/Kingfisher/Sources/ImageModifier.swift
+Pods/Kingfisher/Sources/ImagePrefetcher.swift
+Pods/Kingfisher/Sources/ImageProcessor.swift
+Pods/Kingfisher/Sources/ImageTransition.swift
+Pods/Kingfisher/Sources/ImageView+Kingfisher.swift
+Pods/Kingfisher/Sources/Indicator.swift
+Pods/Kingfisher/Sources/Kingfisher.h
+Pods/Kingfisher/Sources/Kingfisher.swift
+Pods/Kingfisher/Sources/KingfisherManager.swift
+Pods/Kingfisher/Sources/KingfisherOptionsInfo.swift
+Pods/Kingfisher/Sources/Placeholder.swift
+Pods/Kingfisher/Sources/RequestModifier.swift
+Pods/Kingfisher/Sources/Resource.swift
+Pods/Kingfisher/Sources/String+MD5.swift
+Pods/Kingfisher/Sources/ThreadHelper.swift
+Pods/Kingfisher/Sources/UIButton+Kingfisher.swift
+Pods/Target Support Files/Kingfisher/Info.plist
+Pods/Target Support Files/Kingfisher/Kingfisher-dummy.m
+Pods/Target Support Files/Kingfisher/Kingfisher-prefix.pch
+Pods/Target Support Files/Kingfisher/Kingfisher-umbrella.h
+Pods/Target Support Files/Kingfisher/Kingfisher.modulemap
+Pods/Target Support Files/Kingfisher/Kingfisher.xcconfig
+Pods/FormValidatorSwift/Sources/Resources/es.lproj/Localizable.strings
+Pods/FormValidatorSwift/Sources/Validators/OptionalValidator.swift
+Pods/Crashlytics/README.md
+Pods/Crashlytics/submit
+Pods/Crashlytics/Crashlytics.framework/README
+Pods/Crashlytics/Crashlytics.framework/submit
+Pods/Crashlytics/iOS/Crashlytics.framework/Crashlytics
+Pods/Crashlytics/iOS/Crashlytics.framework/Info.plist
+Pods/Crashlytics/iOS/Crashlytics.framework/run
+Pods/Crashlytics/iOS/Crashlytics.framework/submit
+Pods/Crashlytics/iOS/Crashlytics.framework/uploadDSYM
+Pods/Crashlytics/iOS/Crashlytics.framework/Headers/ANSCompatibility.h
+Pods/Crashlytics/iOS/Crashlytics.framework/Headers/Answers.h
+Pods/Crashlytics/iOS/Crashlytics.framework/Headers/CLSAttributes.h
+Pods/Crashlytics/iOS/Crashlytics.framework/Headers/CLSLogging.h
+Pods/Crashlytics/iOS/Crashlytics.framework/Headers/CLSReport.h
+Pods/Crashlytics/iOS/Crashlytics.framework/Headers/CLSStackFrame.h
+Pods/Crashlytics/iOS/Crashlytics.framework/Headers/Crashlytics.h
+Pods/Crashlytics/iOS/Crashlytics.framework/Modules/module.modulemap
+Pods/Fabric/README.md
+Pods/Fabric/run
+Pods/Fabric/upload-symbols
+Pods/Fabric/uploadDSYM
+Pods/Fabric/Fabric.framework/README
+Pods/Fabric/Fabric.framework/run
+Pods/Fabric/iOS/Fabric.framework/Fabric
+Pods/Fabric/iOS/Fabric.framework/Info.plist
+Pods/Fabric/iOS/Fabric.framework/run
+Pods/Fabric/iOS/Fabric.framework/uploadDSYM
+Pods/Fabric/iOS/Fabric.framework/Headers/FABAttributes.h
+Pods/Fabric/iOS/Fabric.framework/Headers/Fabric.h
+Pods/Fabric/iOS/Fabric.framework/Modules/module.modulemap
+Pods/Firebase/.cocoapods.yml
+Pods/Firebase/CHANGELOG.md
+Pods/Firebase/NOTICES
+Pods/Firebase/README.md
+Pods/Firebase/CoreOnly/Sources/Firebase.h
+Pods/Firebase/CoreOnly/Sources/module.modulemap
+Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/FirebaseAnalytics
+Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h
+Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h
+Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h
+Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h
+Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h
+Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h
+Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap
+Pods/FirebaseAnalytics/Frameworks/FirebaseCoreDiagnostics.framework/FirebaseCoreDiagnostics
+Pods/FirebaseAnalytics/Frameworks/FirebaseCoreDiagnostics.framework/Modules/module.modulemap
+Pods/FirebaseCore/LICENSE
+Pods/FirebaseCore/README.md
+Pods/FirebaseCore/Firebase/Core/FIRAnalyticsConfiguration.m
+Pods/FirebaseCore/Firebase/Core/FIRApp.m
+Pods/FirebaseCore/Firebase/Core/FIRAppAssociationRegistration.m
+Pods/FirebaseCore/Firebase/Core/FIRBundleUtil.m
+Pods/FirebaseCore/Firebase/Core/FIRComponent.m
+Pods/FirebaseCore/Firebase/Core/FIRComponentContainer.m
+Pods/FirebaseCore/Firebase/Core/FIRComponentType.m
+Pods/FirebaseCore/Firebase/Core/FIRConfiguration.m
+Pods/FirebaseCore/Firebase/Core/FIRDependency.m
+Pods/FirebaseCore/Firebase/Core/FIRErrors.m
+Pods/FirebaseCore/Firebase/Core/FIRLogger.m
+Pods/FirebaseCore/Firebase/Core/FIROptions.m
+Pods/FirebaseCore/Firebase/Core/FIRVersion.m
+Pods/FirebaseCore/Firebase/Core/Private/FIRAnalyticsConfiguration+Internal.h
+Pods/FirebaseCore/Firebase/Core/Private/FIRAppAssociationRegistration.h
+Pods/FirebaseCore/Firebase/Core/Private/FIRAppInternal.h
+Pods/FirebaseCore/Firebase/Core/Private/FIRBundleUtil.h
+Pods/FirebaseCore/Firebase/Core/Private/FIRComponent.h
+Pods/FirebaseCore/Firebase/Core/Private/FIRComponentContainer.h
+Pods/FirebaseCore/Firebase/Core/Private/FIRComponentContainerInternal.h
+Pods/FirebaseCore/Firebase/Core/Private/FIRComponentRegistrant.h
+Pods/FirebaseCore/Firebase/Core/Private/FIRComponentType.h
+Pods/FirebaseCore/Firebase/Core/Private/FIRCoreConfigurable.h
+Pods/FirebaseCore/Firebase/Core/Private/FIRDependency.h
+Pods/FirebaseCore/Firebase/Core/Private/FIRErrorCode.h
+Pods/FirebaseCore/Firebase/Core/Private/FIRErrors.h
+Pods/FirebaseCore/Firebase/Core/Private/FIRLogger.h
+Pods/FirebaseCore/Firebase/Core/Private/FIROptionsInternal.h
+Pods/FirebaseCore/Firebase/Core/Private/FIRVersion.h
+Pods/FirebaseCore/Firebase/Core/Public/FIRAnalyticsConfiguration.h
+Pods/FirebaseCore/Firebase/Core/Public/FIRApp.h
+Pods/FirebaseCore/Firebase/Core/Public/FIRConfiguration.h
+Pods/FirebaseCore/Firebase/Core/Public/FirebaseCore.h
+Pods/FirebaseCore/Firebase/Core/Public/FIRLoggerLevel.h
+Pods/FirebaseCore/Firebase/Core/Public/FIROptions.h
+Pods/FirebaseInstanceID/CHANGELOG.md
+Pods/FirebaseInstanceID/README.md
+Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/FirebaseInstanceID
+Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h
+Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h
+Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap
+Pods/GoogleAppMeasurement/Frameworks/GoogleAppMeasurement.framework/GoogleAppMeasurement
+Pods/GoogleAppMeasurement/Frameworks/GoogleAppMeasurement.framework/Modules/module.modulemap
+Pods/GoogleUtilities/LICENSE
+Pods/GoogleUtilities/README.md
+Pods/GoogleUtilities/GoogleUtilities/AppDelegateSwizzler/GULAppDelegateSwizzler.m
+Pods/GoogleUtilities/GoogleUtilities/AppDelegateSwizzler/Internal/GULAppDelegateSwizzler_Private.h
+Pods/GoogleUtilities/GoogleUtilities/AppDelegateSwizzler/Private/GULAppDelegateSwizzler.h
+Pods/GoogleUtilities/GoogleUtilities/Common/GULLoggerCodes.h
+Pods/GoogleUtilities/GoogleUtilities/Environment/third_party/GULAppEnvironmentUtil.h
+Pods/GoogleUtilities/GoogleUtilities/Environment/third_party/GULAppEnvironmentUtil.m
+Pods/GoogleUtilities/GoogleUtilities/Logger/GULLogger.m
+Pods/GoogleUtilities/GoogleUtilities/Logger/Private/GULLogger.h
+Pods/GoogleUtilities/GoogleUtilities/Logger/Public/GULLoggerLevel.h
+Pods/GoogleUtilities/GoogleUtilities/MethodSwizzler/GULSwizzler.m
+Pods/GoogleUtilities/GoogleUtilities/MethodSwizzler/Private/GULOriginalIMPConvenienceMacros.h
+Pods/GoogleUtilities/GoogleUtilities/MethodSwizzler/Private/GULSwizzler.h
+Pods/GoogleUtilities/GoogleUtilities/Network/GULMutableDictionary.m
+Pods/GoogleUtilities/GoogleUtilities/Network/GULNetwork.m
+Pods/GoogleUtilities/GoogleUtilities/Network/GULNetworkConstants.m
+Pods/GoogleUtilities/GoogleUtilities/Network/GULNetworkURLSession.m
+Pods/GoogleUtilities/GoogleUtilities/Network/Private/GULMutableDictionary.h
+Pods/GoogleUtilities/GoogleUtilities/Network/Private/GULNetwork.h
+Pods/GoogleUtilities/GoogleUtilities/Network/Private/GULNetworkConstants.h
+Pods/GoogleUtilities/GoogleUtilities/Network/Private/GULNetworkLoggerProtocol.h
+Pods/GoogleUtilities/GoogleUtilities/Network/Private/GULNetworkMessageCode.h
+Pods/GoogleUtilities/GoogleUtilities/Network/Private/GULNetworkURLSession.h
+Pods/GoogleUtilities/GoogleUtilities/NSData+zlib/GULNSData+zlib.h
+Pods/GoogleUtilities/GoogleUtilities/NSData+zlib/GULNSData+zlib.m
+Pods/GoogleUtilities/GoogleUtilities/Reachability/GULReachabilityChecker+Internal.h
+Pods/GoogleUtilities/GoogleUtilities/Reachability/GULReachabilityChecker.m
+Pods/GoogleUtilities/GoogleUtilities/Reachability/Private/GULReachabilityChecker.h
+Pods/GoogleUtilities/GoogleUtilities/Reachability/Private/GULReachabilityMessageCode.h
+Pods/Headers/Private/Firebase/Firebase.h
+Pods/Headers/Public/Firebase/Firebase.h
+Pods/nanopb/LICENSE.txt
+Pods/nanopb/pb.h
+Pods/nanopb/pb_common.c
+Pods/nanopb/pb_common.h
+Pods/nanopb/pb_decode.c
+Pods/nanopb/pb_decode.h
+Pods/nanopb/pb_encode.c
+Pods/nanopb/pb_encode.h
+Pods/nanopb/README.md
+Pods/Target Support Files/FirebaseCore/FirebaseCore-dummy.m
+Pods/Target Support Files/FirebaseCore/FirebaseCore-umbrella.h
+Pods/Target Support Files/FirebaseCore/FirebaseCore.modulemap
+Pods/Target Support Files/FirebaseCore/FirebaseCore.xcconfig
+Pods/Target Support Files/GoogleUtilities/GoogleUtilities-dummy.m
+Pods/Target Support Files/GoogleUtilities/GoogleUtilities-prefix.pch
+Pods/Target Support Files/GoogleUtilities/GoogleUtilities-umbrella.h
+Pods/Target Support Files/GoogleUtilities/GoogleUtilities.modulemap
+Pods/Target Support Files/GoogleUtilities/GoogleUtilities.xcconfig
+Pods/Target Support Files/GoogleUtilities/Info.plist
+Pods/Target Support Files/nanopb/Info.plist
+Pods/Target Support Files/nanopb/nanopb-dummy.m
+Pods/Target Support Files/nanopb/nanopb-prefix.pch
+Pods/Target Support Files/nanopb/nanopb-umbrella.h
+Pods/Target Support Files/nanopb/nanopb.modulemap
+Pods/Target Support Files/nanopb/nanopb.xcconfig
+jirah/AppDelegate.swift.orig
+jirah/Info.plist.orig
+jirah.xcodeproj/project.pbxproj.orig
+jirah.xcodeproj/project_BACKUP_1598.pbxproj
+jirah.xcodeproj/project_BASE_1598.pbxproj
+jirah.xcodeproj/project_BASE_3729.pbxproj
+jirah.xcodeproj/project_LOCAL_1598.pbxproj
+jirah.xcodeproj/project_LOCAL_3729.pbxproj
+jirah.xcodeproj/project_REMOTE_1598.pbxproj
+jirah/ar.lproj/Localizable.strings.orig
+jirah/Assets.xcassets/Rejected.imageset/Contents.json
+jirah/Assets.xcassets/Rejected.imageset/Rejected.png
+jirah/Assets.xcassets/Rejected.imageset/Rejected@2x.png
+jirah/Assets.xcassets/Rejected.imageset/Rejected@3x.png
+jirah/Base.lproj/Localizable.strings.orig
+jirah/base/DeepLinking/DeepLinker.swift
+jirah/base/DeepLinking/NotificationParser.swift
+jirah/base/DeepLinking/RootVC.swift
+jirah/Main/TabBarVC.swift.orig
+Pods/OneSignal/LICENSE
+Pods/OneSignal/README.md
+Pods/OneSignal/iOS_SDK/OneSignalSDK/Framework/OneSignal.framework/Headers
+Pods/OneSignal/iOS_SDK/OneSignalSDK/Framework/OneSignal.framework/Modules
+Pods/OneSignal/iOS_SDK/OneSignalSDK/Framework/OneSignal.framework/OneSignal
+Pods/OneSignal/iOS_SDK/OneSignalSDK/Framework/OneSignal.framework/Versions/Current
+Pods/OneSignal/iOS_SDK/OneSignalSDK/Framework/OneSignal.framework/Versions/A/OneSignal
+Pods/OneSignal/iOS_SDK/OneSignalSDK/Framework/OneSignal.framework/Versions/A/Headers/OneSignal.h
+Pods/OneSignal/iOS_SDK/OneSignalSDK/Framework/OneSignal.framework/Versions/A/Modules/module.modulemap
+Pods/FirebaseAnalytics/Frameworks/FIRAnalyticsConnector.framework/FIRAnalyticsConnector
+Pods/FirebaseAnalytics/Frameworks/FIRAnalyticsConnector.framework/Modules/module.modulemap
+Pods/GoogleUtilities/GoogleUtilities/UserDefaults/GULUserDefaults.m
+Pods/GoogleUtilities/GoogleUtilities/UserDefaults/Private/GULUserDefaults.h
+Pods/ObjectMapper/Sources/CodableTransform.swift
+Pods/OneSignal/iOS_SDK/OneSignalSDK/Framework/OneSignal.framework/Resources
+Pods/OneSignal/iOS_SDK/OneSignalSDK/Framework/OneSignal.framework/Versions/A/Resources/Info.plist
+Pods/SVProgressHUD/LICENSE
+Pods/SVProgressHUD/README.md
+Pods/SVProgressHUD/SVProgressHUD/SVIndefiniteAnimatedView.h
+Pods/SVProgressHUD/SVProgressHUD/SVIndefiniteAnimatedView.m
+Pods/SVProgressHUD/SVProgressHUD/SVProgressAnimatedView.h
+Pods/SVProgressHUD/SVProgressHUD/SVProgressAnimatedView.m
+Pods/SVProgressHUD/SVProgressHUD/SVProgressHUD.h
+Pods/SVProgressHUD/SVProgressHUD/SVProgressHUD.m
+Pods/SVProgressHUD/SVProgressHUD/SVRadialGradientLayer.h
+Pods/SVProgressHUD/SVProgressHUD/SVRadialGradientLayer.m
+Pods/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle/angle-mask.png
+Pods/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle/angle-mask@2x.png
+Pods/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle/angle-mask@3x.png
+Pods/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle/error.png
+Pods/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle/error@2x.png
+Pods/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle/error@3x.png
+Pods/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle/info.png
+Pods/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle/info@2x.png
+Pods/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle/info@3x.png
+Pods/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle/success.png
+Pods/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle/success@2x.png
+Pods/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle/success@3x.png
+Pods/SwiftMessages/SwiftMessages/CALayer+Utils.swift
+Pods/SwiftMessages/SwiftMessages/CornerRoundingView.swift
+Pods/SwiftMessages/SwiftMessages/SwiftMessagesSegue.swift
+Pods/SwiftMessages/SwiftMessages/ViewControllerContainerView.swift
+Pods/Target Support Files/SVProgressHUD/Info.plist
+Pods/Target Support Files/SVProgressHUD/SVProgressHUD-dummy.m
+Pods/Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch
+Pods/Target Support Files/SVProgressHUD/SVProgressHUD-umbrella.h
+Pods/Target Support Files/SVProgressHUD/SVProgressHUD.modulemap
+Pods/Target Support Files/SVProgressHUD/SVProgressHUD.xcconfig
+Pods/FLAnimatedImage/LICENSE
+Pods/FLAnimatedImage/README.md
+Pods/FLAnimatedImage/FLAnimatedImage/FLAnimatedImage.h
+Pods/FLAnimatedImage/FLAnimatedImage/FLAnimatedImage.m
+Pods/FLAnimatedImage/FLAnimatedImage/FLAnimatedImageView.h
+Pods/FLAnimatedImage/FLAnimatedImage/FLAnimatedImageView.m
+Pods/KSPhotoBrowser/LICENSE
+Pods/KSPhotoBrowser/README.md
+Pods/KSPhotoBrowser/KSPhotoBrowser/KSImageManagerProtocol.h
+Pods/KSPhotoBrowser/KSPhotoBrowser/KSPhotoBrowser.h
+Pods/KSPhotoBrowser/KSPhotoBrowser/KSPhotoBrowser.m
+Pods/KSPhotoBrowser/KSPhotoBrowser/KSPhotoItem.h
+Pods/KSPhotoBrowser/KSPhotoBrowser/KSPhotoItem.m
+Pods/KSPhotoBrowser/KSPhotoBrowser/KSPhotoView.h
+Pods/KSPhotoBrowser/KSPhotoBrowser/KSPhotoView.m
+Pods/KSPhotoBrowser/KSPhotoBrowser/KSProgressLayer.h
+Pods/KSPhotoBrowser/KSPhotoBrowser/KSProgressLayer.m
+Pods/KSPhotoBrowser/KSPhotoBrowser/KSSDImageManager.h
+Pods/KSPhotoBrowser/KSPhotoBrowser/KSSDImageManager.m
+Pods/KSPhotoBrowser/KSPhotoBrowser/UIImage+KS.h
+Pods/KSPhotoBrowser/KSPhotoBrowser/UIImage+KS.m
+Pods/SDWebImage/LICENSE
+Pods/SDWebImage/README.md
+Pods/SDWebImage/SDWebImage/NSButton+WebCache.h
+Pods/SDWebImage/SDWebImage/NSButton+WebCache.m
+Pods/SDWebImage/SDWebImage/NSData+ImageContentType.h
+Pods/SDWebImage/SDWebImage/NSData+ImageContentType.m
+Pods/SDWebImage/SDWebImage/NSImage+WebCache.h
+Pods/SDWebImage/SDWebImage/NSImage+WebCache.m
+Pods/SDWebImage/SDWebImage/SDAnimatedImageRep.h
+Pods/SDWebImage/SDWebImage/SDAnimatedImageRep.m
+Pods/SDWebImage/SDWebImage/SDImageCache.h
+Pods/SDWebImage/SDWebImage/SDImageCache.m
+Pods/SDWebImage/SDWebImage/SDImageCacheConfig.h
+Pods/SDWebImage/SDWebImage/SDImageCacheConfig.m
+Pods/SDWebImage/SDWebImage/SDWebImageCoder.h
+Pods/SDWebImage/SDWebImage/SDWebImageCoder.m
+Pods/SDWebImage/SDWebImage/SDWebImageCoderHelper.h
+Pods/SDWebImage/SDWebImage/SDWebImageCoderHelper.m
+Pods/SDWebImage/SDWebImage/SDWebImageCodersManager.h
+Pods/SDWebImage/SDWebImage/SDWebImageCodersManager.m
+Pods/SDWebImage/SDWebImage/SDWebImageCompat.h
+Pods/SDWebImage/SDWebImage/SDWebImageCompat.m
+Pods/SDWebImage/SDWebImage/SDWebImageDownloader.h
+Pods/SDWebImage/SDWebImage/SDWebImageDownloader.m
+Pods/SDWebImage/SDWebImage/SDWebImageDownloaderOperation.h
+Pods/SDWebImage/SDWebImage/SDWebImageDownloaderOperation.m
+Pods/SDWebImage/SDWebImage/SDWebImageFrame.h
+Pods/SDWebImage/SDWebImage/SDWebImageFrame.m
+Pods/SDWebImage/SDWebImage/SDWebImageGIFCoder.h
+Pods/SDWebImage/SDWebImage/SDWebImageGIFCoder.m
+Pods/SDWebImage/SDWebImage/SDWebImageImageIOCoder.h
+Pods/SDWebImage/SDWebImage/SDWebImageImageIOCoder.m
+Pods/SDWebImage/SDWebImage/SDWebImageManager.h
+Pods/SDWebImage/SDWebImage/SDWebImageManager.m
+Pods/SDWebImage/SDWebImage/SDWebImageOperation.h
+Pods/SDWebImage/SDWebImage/SDWebImagePrefetcher.h
+Pods/SDWebImage/SDWebImage/SDWebImagePrefetcher.m
+Pods/SDWebImage/SDWebImage/SDWebImageTransition.h
+Pods/SDWebImage/SDWebImage/SDWebImageTransition.m
+Pods/SDWebImage/SDWebImage/UIButton+WebCache.h
+Pods/SDWebImage/SDWebImage/UIButton+WebCache.m
+Pods/SDWebImage/SDWebImage/UIImage+ForceDecode.h
+Pods/SDWebImage/SDWebImage/UIImage+ForceDecode.m
+Pods/SDWebImage/SDWebImage/UIImage+GIF.h
+Pods/SDWebImage/SDWebImage/UIImage+GIF.m
+Pods/SDWebImage/SDWebImage/UIImage+MultiFormat.h
+Pods/SDWebImage/SDWebImage/UIImage+MultiFormat.m
+Pods/SDWebImage/SDWebImage/UIImageView+HighlightedWebCache.h
+Pods/SDWebImage/SDWebImage/UIImageView+HighlightedWebCache.m
+Pods/SDWebImage/SDWebImage/UIImageView+WebCache.h
+Pods/SDWebImage/SDWebImage/UIImageView+WebCache.m
+Pods/SDWebImage/SDWebImage/UIView+WebCache.h
+Pods/SDWebImage/SDWebImage/UIView+WebCache.m
+Pods/SDWebImage/SDWebImage/UIView+WebCacheOperation.h
+Pods/SDWebImage/SDWebImage/UIView+WebCacheOperation.m
+Pods/SDWebImage/SDWebImage/FLAnimatedImage/FLAnimatedImageView+WebCache.h
+Pods/SDWebImage/SDWebImage/FLAnimatedImage/FLAnimatedImageView+WebCache.m
+Pods/Target Support Files/FLAnimatedImage/FLAnimatedImage-dummy.m
+Pods/Target Support Files/FLAnimatedImage/FLAnimatedImage-prefix.pch
+Pods/Target Support Files/FLAnimatedImage/FLAnimatedImage-umbrella.h
+Pods/Target Support Files/FLAnimatedImage/FLAnimatedImage.modulemap
+Pods/Target Support Files/FLAnimatedImage/FLAnimatedImage.xcconfig
+Pods/Target Support Files/FLAnimatedImage/Info.plist
+Pods/Target Support Files/KSPhotoBrowser/Info.plist
+Pods/Target Support Files/KSPhotoBrowser/KSPhotoBrowser-dummy.m
+Pods/Target Support Files/KSPhotoBrowser/KSPhotoBrowser-prefix.pch
+Pods/Target Support Files/KSPhotoBrowser/KSPhotoBrowser-umbrella.h
+Pods/Target Support Files/KSPhotoBrowser/KSPhotoBrowser.modulemap
+Pods/Target Support Files/KSPhotoBrowser/KSPhotoBrowser.xcconfig
+Pods/Target Support Files/SDWebImage/Info.plist
+Pods/Target Support Files/SDWebImage/SDWebImage-dummy.m
+Pods/Target Support Files/SDWebImage/SDWebImage-prefix.pch
+Pods/Target Support Files/SDWebImage/SDWebImage-umbrella.h
+Pods/Target Support Files/SDWebImage/SDWebImage.modulemap
+Pods/Target Support Files/SDWebImage/SDWebImage.xcconfig
+Pods/Target Support Files/Toast-Swift/Info.plist
+Pods/Target Support Files/Toast-Swift/Toast-Swift-dummy.m
+Pods/Target Support Files/Toast-Swift/Toast-Swift-prefix.pch
+Pods/Target Support Files/Toast-Swift/Toast-Swift-umbrella.h
+Pods/Target Support Files/Toast-Swift/Toast-Swift.modulemap
+Pods/Target Support Files/Toast-Swift/Toast-Swift.xcconfig
+Pods/Toast-Swift/LICENSE
+Pods/Toast-Swift/README.md
+Pods/Toast-Swift/Toast/Toast.swift
+Pods/HTMLKit/LICENSE
+Pods/HTMLKit/README.md
+Pods/HTMLKit/Sources/CSSAttributeSelector.m
+Pods/HTMLKit/Sources/CSSCombinatorSelector.m
+Pods/HTMLKit/Sources/CSSCompoundSelector.m
+Pods/HTMLKit/Sources/CSSInputStream.m
+Pods/HTMLKit/Sources/CSSNthExpressionParser.m
+Pods/HTMLKit/Sources/CSSNthExpressionSelector.m
+Pods/HTMLKit/Sources/CSSPseudoClassSelector.m
+Pods/HTMLKit/Sources/CSSPseudoFunctionSelector.m
+Pods/HTMLKit/Sources/CSSSelector.m
+Pods/HTMLKit/Sources/CSSSelectorBlock.m
+Pods/HTMLKit/Sources/CSSSelectorParser.m
+Pods/HTMLKit/Sources/CSSSelectors.m
+Pods/HTMLKit/Sources/CSSStructuralPseudoSelectors.m
+Pods/HTMLKit/Sources/CSSTypeSelector.m
+Pods/HTMLKit/Sources/HTMLCharacterData.m
+Pods/HTMLKit/Sources/HTMLCharacterToken.m
+Pods/HTMLKit/Sources/HTMLComment.m
+Pods/HTMLKit/Sources/HTMLCommentToken.m
+Pods/HTMLKit/Sources/HTMLDOCTYPEToken.m
+Pods/HTMLKit/Sources/HTMLDocument.m
+Pods/HTMLKit/Sources/HTMLDocumentFragment.m
+Pods/HTMLKit/Sources/HTMLDocumentType.m
+Pods/HTMLKit/Sources/HTMLDOMTokenList.m
+Pods/HTMLKit/Sources/HTMLDOMUtils.m
+Pods/HTMLKit/Sources/HTMLElement.m
+Pods/HTMLKit/Sources/HTMLEOFToken.m
+Pods/HTMLKit/Sources/HTMLInputStreamReader.m
+Pods/HTMLKit/Sources/HTMLKitDOMExceptions.m
+Pods/HTMLKit/Sources/HTMLListOfActiveFormattingElements.m
+Pods/HTMLKit/Sources/HTMLMarker.m
+Pods/HTMLKit/Sources/HTMLNode.m
+Pods/HTMLKit/Sources/HTMLNodeFilter.m
+Pods/HTMLKit/Sources/HTMLNodeIterator.m
+Pods/HTMLKit/Sources/HTMLNodeTraversal.m
+Pods/HTMLKit/Sources/HTMLOrderedDictionary.m
+Pods/HTMLKit/Sources/HTMLParseErrorToken.m
+Pods/HTMLKit/Sources/HTMLParser.m
+Pods/HTMLKit/Sources/HTMLRange.m
+Pods/HTMLKit/Sources/HTMLStackOfOpenElements.m
+Pods/HTMLKit/Sources/HTMLTagToken.m
+Pods/HTMLKit/Sources/HTMLTemplate.m
+Pods/HTMLKit/Sources/HTMLText.m
+Pods/HTMLKit/Sources/HTMLToken.m
+Pods/HTMLKit/Sources/HTMLTokenizer.m
+Pods/HTMLKit/Sources/HTMLTokenizerEntities.m
+Pods/HTMLKit/Sources/HTMLTreeWalker.m
+Pods/HTMLKit/Sources/NSCharacterSet+HTMLKit.m
+Pods/HTMLKit/Sources/NSString+HTMLKit.m
+Pods/HTMLKit/Sources/include/CSSAttributeSelector.h
+Pods/HTMLKit/Sources/include/CSSCodePoints.h
+Pods/HTMLKit/Sources/include/CSSCombinatorSelector.h
+Pods/HTMLKit/Sources/include/CSSCompoundSelector.h
+Pods/HTMLKit/Sources/include/CSSInputStream.h
+Pods/HTMLKit/Sources/include/CSSNthExpressionParser.h
+Pods/HTMLKit/Sources/include/CSSNthExpressionSelector.h
+Pods/HTMLKit/Sources/include/CSSPseudoClassSelector.h
+Pods/HTMLKit/Sources/include/CSSPseudoFunctionSelector.h
+Pods/HTMLKit/Sources/include/CSSSelector.h
+Pods/HTMLKit/Sources/include/CSSSelectorBlock.h
+Pods/HTMLKit/Sources/include/CSSSelectorParser.h
+Pods/HTMLKit/Sources/include/CSSSelectors.h
+Pods/HTMLKit/Sources/include/CSSStructuralPseudoSelectors.h
+Pods/HTMLKit/Sources/include/CSSTypeSelector.h
+Pods/HTMLKit/Sources/include/HTMLCharacterData+Private.h
+Pods/HTMLKit/Sources/include/HTMLCharacterData.h
+Pods/HTMLKit/Sources/include/HTMLCharacterToken.h
+Pods/HTMLKit/Sources/include/HTMLComment.h
+Pods/HTMLKit/Sources/include/HTMLCommentToken.h
+Pods/HTMLKit/Sources/include/HTMLDOCTYPEToken.h
+Pods/HTMLKit/Sources/include/HTMLDocument+Private.h
+Pods/HTMLKit/Sources/include/HTMLDocument.h
+Pods/HTMLKit/Sources/include/HTMLDocumentFragment.h
+Pods/HTMLKit/Sources/include/HTMLDocumentType.h
+Pods/HTMLKit/Sources/include/HTMLDOM.h
+Pods/HTMLKit/Sources/include/HTMLDOMTokenList.h
+Pods/HTMLKit/Sources/include/HTMLDOMUtils.h
+Pods/HTMLKit/Sources/include/HTMLElement.h
+Pods/HTMLKit/Sources/include/HTMLElementAdjustment.h
+Pods/HTMLKit/Sources/include/HTMLElementTypes.h
+Pods/HTMLKit/Sources/include/HTMLEOFToken.h
+Pods/HTMLKit/Sources/include/HTMLInputStreamReader.h
+Pods/HTMLKit/Sources/include/HTMLKit.h
+Pods/HTMLKit/Sources/include/HTMLKitDOMExceptions.h
+Pods/HTMLKit/Sources/include/HTMLKitErrorDomain.h
+Pods/HTMLKit/Sources/include/HTMLListOfActiveFormattingElements.h
+Pods/HTMLKit/Sources/include/HTMLMarker.h
+Pods/HTMLKit/Sources/include/HTMLNamespaces.h
+Pods/HTMLKit/Sources/include/HTMLNode+Private.h
+Pods/HTMLKit/Sources/include/HTMLNode.h
+Pods/HTMLKit/Sources/include/HTMLNodeFilter.h
+Pods/HTMLKit/Sources/include/HTMLNodeIterator+Private.h
+Pods/HTMLKit/Sources/include/HTMLNodeIterator.h
+Pods/HTMLKit/Sources/include/HTMLNodeTraversal.h
+Pods/HTMLKit/Sources/include/HTMLOrderedDictionary.h
+Pods/HTMLKit/Sources/include/HTMLParseErrorToken.h
+Pods/HTMLKit/Sources/include/HTMLParser+Private.h
+Pods/HTMLKit/Sources/include/HTMLParser.h
+Pods/HTMLKit/Sources/include/HTMLParserInsertionModes.h
+Pods/HTMLKit/Sources/include/HTMLQuirksMode.h
+Pods/HTMLKit/Sources/include/HTMLRange+Private.h
+Pods/HTMLKit/Sources/include/HTMLRange.h
+Pods/HTMLKit/Sources/include/HTMLStackOfOpenElements.h
+Pods/HTMLKit/Sources/include/HTMLTagToken.h
+Pods/HTMLKit/Sources/include/HTMLTemplate.h
+Pods/HTMLKit/Sources/include/HTMLText.h
+Pods/HTMLKit/Sources/include/HTMLToken.h
+Pods/HTMLKit/Sources/include/HTMLTokenizer.h
+Pods/HTMLKit/Sources/include/HTMLTokenizerCharacters.h
+Pods/HTMLKit/Sources/include/HTMLTokenizerEntities.h
+Pods/HTMLKit/Sources/include/HTMLTokenizerStates.h
+Pods/HTMLKit/Sources/include/HTMLTokens.h
+Pods/HTMLKit/Sources/include/HTMLTreeWalker.h
+Pods/HTMLKit/Sources/include/NSCharacterSet+HTMLKit.h
+Pods/HTMLKit/Sources/include/NSString+HTMLKit.h
+Pods/Local Podspecs/SendBirdChat.podspec.json
+Pods/MGSwipeTableCell/LICENSE
+Pods/MGSwipeTableCell/README.md
+Pods/MGSwipeTableCell/MGSwipeTableCell/MGSwipeButton.h
+Pods/MGSwipeTableCell/MGSwipeTableCell/MGSwipeButton.m
+Pods/MGSwipeTableCell/MGSwipeTableCell/MGSwipeTableCell.h
+Pods/MGSwipeTableCell/MGSwipeTableCell/MGSwipeTableCell.m
+Pods/NVActivityIndicatorView/LICENSE
+Pods/NVActivityIndicatorView/README.md
+Pods/NVActivityIndicatorView/Source/NVActivityIndicatorView/NVActivityIndicatorAnimationDelegate.swift
+Pods/NVActivityIndicatorView/Source/NVActivityIndicatorView/NVActivityIndicatorShape.swift
+Pods/NVActivityIndicatorView/Source/NVActivityIndicatorView/NVActivityIndicatorView.swift
+Pods/NVActivityIndicatorView/Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationAudioEqualizer.swift
+Pods/NVActivityIndicatorView/Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallBeat.swift
+Pods/NVActivityIndicatorView/Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallClipRotate.swift
+Pods/NVActivityIndicatorView/Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallClipRotateMultiple.swift
+Pods/NVActivityIndicatorView/Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallClipRotatePulse.swift
+Pods/NVActivityIndicatorView/Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallGridBeat.swift
+Pods/NVActivityIndicatorView/Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallGridPulse.swift
+Pods/NVActivityIndicatorView/Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallPulse.swift
+Pods/NVActivityIndicatorView/Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallPulseRise.swift
+Pods/NVActivityIndicatorView/Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallPulseSync.swift
+Pods/NVActivityIndicatorView/Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallRotate.swift
+Pods/NVActivityIndicatorView/Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallRotateChase.swift
+Pods/NVActivityIndicatorView/Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallScale.swift
+Pods/NVActivityIndicatorView/Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallScaleMultiple.swift
+Pods/NVActivityIndicatorView/Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallScaleRipple.swift
+Pods/NVActivityIndicatorView/Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallScaleRippleMultiple.swift
+Pods/NVActivityIndicatorView/Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallSpinFadeLoader.swift
+Pods/NVActivityIndicatorView/Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallTrianglePath.swift
+Pods/NVActivityIndicatorView/Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallZigZag.swift
+Pods/NVActivityIndicatorView/Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallZigZagDeflect.swift
+Pods/NVActivityIndicatorView/Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBlank.swift
+Pods/NVActivityIndicatorView/Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationCircleStrokeSpin.swift
+Pods/NVActivityIndicatorView/Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationCubeTransition.swift
+Pods/NVActivityIndicatorView/Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationLineScale.swift
+Pods/NVActivityIndicatorView/Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationLineScaleParty.swift
+Pods/NVActivityIndicatorView/Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationLineScalePulseOut.swift
+Pods/NVActivityIndicatorView/Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationLineScalePulseOutRapid.swift
+Pods/NVActivityIndicatorView/Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationLineSpinFadeLoader.swift
+Pods/NVActivityIndicatorView/Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationOrbit.swift
+Pods/NVActivityIndicatorView/Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationPacman.swift
+Pods/NVActivityIndicatorView/Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationSemiCircleSpin.swift
+Pods/NVActivityIndicatorView/Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationSquareSpin.swift
+Pods/NVActivityIndicatorView/Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationTriangleSkewSpin.swift
+Pods/NVActivityIndicatorView/Source/NVActivityIndicatorView/Presenter/NVActivityIndicatorPresenter.swift
+Pods/NVActivityIndicatorView/Source/NVActivityIndicatorView/Presenter/NVActivityIndicatorViewable.swift
+Pods/NYTPhotoViewer/LICENSE.md
+Pods/NYTPhotoViewer/README.md
+Pods/NYTPhotoViewer/Pod/Assets/ios/NYTPhotoViewerCloseButtonX.png
+Pods/NYTPhotoViewer/Pod/Assets/ios/NYTPhotoViewerCloseButtonX@2x.png
+Pods/NYTPhotoViewer/Pod/Assets/ios/NYTPhotoViewerCloseButtonX@3x.png
+Pods/NYTPhotoViewer/Pod/Assets/ios/NYTPhotoViewerCloseButtonXLandscape.png
+Pods/NYTPhotoViewer/Pod/Assets/ios/NYTPhotoViewerCloseButtonXLandscape@2x.png
+Pods/NYTPhotoViewer/Pod/Assets/ios/NYTPhotoViewerCloseButtonXLandscape@3x.png
+Pods/NYTPhotoViewer/Pod/Classes/ios/NYTPhotoCaptionView.h
+Pods/NYTPhotoViewer/Pod/Classes/ios/NYTPhotoCaptionView.m
+Pods/NYTPhotoViewer/Pod/Classes/ios/NYTPhotoDismissalInteractionController.h
+Pods/NYTPhotoViewer/Pod/Classes/ios/NYTPhotoDismissalInteractionController.m
+Pods/NYTPhotoViewer/Pod/Classes/ios/NYTPhotosDataSource.h
+Pods/NYTPhotoViewer/Pod/Classes/ios/NYTPhotosDataSource.m
+Pods/NYTPhotoViewer/Pod/Classes/ios/NYTPhotosOverlayView.h
+Pods/NYTPhotoViewer/Pod/Classes/ios/NYTPhotosOverlayView.m
+Pods/NYTPhotoViewer/Pod/Classes/ios/NYTPhotosViewController.h
+Pods/NYTPhotoViewer/Pod/Classes/ios/NYTPhotosViewController.m
+Pods/NYTPhotoViewer/Pod/Classes/ios/NYTPhotoTransitionAnimator.h
+Pods/NYTPhotoViewer/Pod/Classes/ios/NYTPhotoTransitionAnimator.m
+Pods/NYTPhotoViewer/Pod/Classes/ios/NYTPhotoTransitionController.h
+Pods/NYTPhotoViewer/Pod/Classes/ios/NYTPhotoTransitionController.m
+Pods/NYTPhotoViewer/Pod/Classes/ios/NYTPhotoViewController.h
+Pods/NYTPhotoViewer/Pod/Classes/ios/NYTPhotoViewController.m
+Pods/NYTPhotoViewer/Pod/Classes/ios/NYTScalingImageView.h
+Pods/NYTPhotoViewer/Pod/Classes/ios/NYTScalingImageView.m
+Pods/NYTPhotoViewer/Pod/Classes/ios/Protocols/NYTPhoto.h
+Pods/NYTPhotoViewer/Pod/Classes/ios/Protocols/NYTPhotoCaptionViewLayoutWidthHinting.h
+Pods/NYTPhotoViewer/Pod/Classes/ios/Protocols/NYTPhotoContainer.h
+Pods/NYTPhotoViewer/Pod/Classes/ios/Protocols/NYTPhotosViewControllerDataSource.h
+Pods/NYTPhotoViewer/Pod/Classes/ios/Resource Loading/NSBundle+NYTPhotoViewer.h
+Pods/NYTPhotoViewer/Pod/Classes/ios/Resource Loading/NSBundle+NYTPhotoViewer.m
+Pods/SendBirdChat/README.md
+Pods/SendBirdChat/SendBirdChat/AsyncOperation.swift
+Pods/SendBirdChat/SendBirdChat/Channel+CoreDataClass.swift
+Pods/SendBirdChat/SendBirdChat/Channel+CoreDataProperties.swift
+Pods/SendBirdChat/SendBirdChat/Message+CoreDataClass.swift
+Pods/SendBirdChat/SendBirdChat/Message+CoreDataProperties.swift
+Pods/SendBirdChat/SendBirdChat/SBCChannelCollection.swift
+Pods/SendBirdChat/SendBirdChat/SBCChannelQuery.swift
+Pods/SendBirdChat/SendBirdChat/SBCCoreDataSource.swift
+Pods/SendBirdChat/SendBirdChat/SBCMessageCollection.swift
+Pods/SendBirdChat/SendBirdChat/SBCMessageQuery.swift
+Pods/SendBirdChat/SendBirdChat/SBCSyncManager.swift
+Pods/SendBirdChat/SendBirdChat/SendBirdChat.h
+Pods/SendBirdChat/SendBirdChat/SendBirdChat.swift
+Pods/SendBirdChat/SendBirdChat/SendBirdSingleConversation.swift
+Pods/SendBirdChat/SendBirdChat/SyncManagerSelectedConversations.swift
+Pods/SendBirdChat/SendBirdChat/SyncOperation.swift
+Pods/SendBirdChat/SendBirdChat/UIDeviceExtension.swift
+Pods/SendBirdChat/SendBirdChat/SendBirdChat.xcdatamodeld/SendBirdChat.xcdatamodel/contents
+Pods/SendBirdSDK/LICENSE.md
+Pods/SendBirdSDK/README.md
+Pods/SendBirdSDK/SendBirdSDK.framework/Info.plist
+Pods/SendBirdSDK/SendBirdSDK.framework/SendBirdSDK
+Pods/SendBirdSDK/SendBirdSDK.framework/Headers/SBDAdminMessage.h
+Pods/SendBirdSDK/SendBirdSDK.framework/Headers/SBDApplicationUserListQuery.h
+Pods/SendBirdSDK/SendBirdSDK.framework/Headers/SBDBannedUserListQuery.h
+Pods/SendBirdSDK/SendBirdSDK.framework/Headers/SBDBaseChannel.h
+Pods/SendBirdSDK/SendBirdSDK.framework/Headers/SBDBaseMessage.h
+Pods/SendBirdSDK/SendBirdSDK.framework/Headers/SBDBaseMessageParams.h
+Pods/SendBirdSDK/SendBirdSDK.framework/Headers/SBDBlockedUserListQuery.h
+Pods/SendBirdSDK/SendBirdSDK.framework/Headers/SBDConnectionManager.h
+Pods/SendBirdSDK/SendBirdSDK.framework/Headers/SBDConstants.h
+Pods/SendBirdSDK/SendBirdSDK.framework/Headers/SBDError.h
+Pods/SendBirdSDK/SendBirdSDK.framework/Headers/SBDFileMessage.h
+Pods/SendBirdSDK/SendBirdSDK.framework/Headers/SBDFileMessageParams.h
+Pods/SendBirdSDK/SendBirdSDK.framework/Headers/SBDFriendListQuery.h
+Pods/SendBirdSDK/SendBirdSDK.framework/Headers/SBDGroupChannel.h
+Pods/SendBirdSDK/SendBirdSDK.framework/Headers/SBDGroupChannelListQuery.h
+Pods/SendBirdSDK/SendBirdSDK.framework/Headers/SBDGroupChannelMemberListQuery.h
+Pods/SendBirdSDK/SendBirdSDK.framework/Headers/SBDGroupChannelParams.h
+Pods/SendBirdSDK/SendBirdSDK.framework/Headers/SBDGroupChannelTotalUnreadMessageCountParams.h
+Pods/SendBirdSDK/SendBirdSDK.framework/Headers/SBDInternalTypes.h
+Pods/SendBirdSDK/SendBirdSDK.framework/Headers/SBDMain.h
+Pods/SendBirdSDK/SendBirdSDK.framework/Headers/SBDMember.h
+Pods/SendBirdSDK/SendBirdSDK.framework/Headers/SBDMessageListQuery.h
+Pods/SendBirdSDK/SendBirdSDK.framework/Headers/SBDMutedUserListQuery.h
+Pods/SendBirdSDK/SendBirdSDK.framework/Headers/SBDOpenChannel.h
+Pods/SendBirdSDK/SendBirdSDK.framework/Headers/SBDOpenChannelListQuery.h
+Pods/SendBirdSDK/SendBirdSDK.framework/Headers/SBDOperatorListQuery.h
+Pods/SendBirdSDK/SendBirdSDK.framework/Headers/SBDParticipantListQuery.h
+Pods/SendBirdSDK/SendBirdSDK.framework/Headers/SBDPreviousMessageListQuery.h
+Pods/SendBirdSDK/SendBirdSDK.framework/Headers/SBDPublicGroupChannelListQuery.h
+Pods/SendBirdSDK/SendBirdSDK.framework/Headers/SBDScheduledUserMessage.h
+Pods/SendBirdSDK/SendBirdSDK.framework/Headers/SBDScheduledUserMessageParams.h
+Pods/SendBirdSDK/SendBirdSDK.framework/Headers/SBDSender.h
+Pods/SendBirdSDK/SendBirdSDK.framework/Headers/SBDTypes.h
+Pods/SendBirdSDK/SendBirdSDK.framework/Headers/SBDUnreadItemCount.h
+Pods/SendBirdSDK/SendBirdSDK.framework/Headers/SBDUser.h
+Pods/SendBirdSDK/SendBirdSDK.framework/Headers/SBDUserListQuery.h
+Pods/SendBirdSDK/SendBirdSDK.framework/Headers/SBDUserMessage.h
+Pods/SendBirdSDK/SendBirdSDK.framework/Headers/SBDUserMessageParams.h
+Pods/SendBirdSDK/SendBirdSDK.framework/Headers/SendBirdSDK.h
+Pods/SendBirdSDK/SendBirdSDK.framework/Modules/module.modulemap
+Pods/Target Support Files/HTMLKit/HTMLKit-dummy.m
+Pods/Target Support Files/HTMLKit/HTMLKit-prefix.pch
+Pods/Target Support Files/HTMLKit/HTMLKit-umbrella.h
+Pods/Target Support Files/HTMLKit/HTMLKit.modulemap
+Pods/Target Support Files/HTMLKit/HTMLKit.xcconfig
+Pods/Target Support Files/HTMLKit/Info.plist
+Pods/Target Support Files/MGSwipeTableCell/Info.plist
+Pods/Target Support Files/MGSwipeTableCell/MGSwipeTableCell-dummy.m
+Pods/Target Support Files/MGSwipeTableCell/MGSwipeTableCell-prefix.pch
+Pods/Target Support Files/MGSwipeTableCell/MGSwipeTableCell-umbrella.h
+Pods/Target Support Files/MGSwipeTableCell/MGSwipeTableCell.modulemap
+Pods/Target Support Files/MGSwipeTableCell/MGSwipeTableCell.xcconfig
+Pods/Target Support Files/NVActivityIndicatorView/Info.plist
+Pods/Target Support Files/NVActivityIndicatorView/NVActivityIndicatorView-dummy.m
+Pods/Target Support Files/NVActivityIndicatorView/NVActivityIndicatorView-prefix.pch
+Pods/Target Support Files/NVActivityIndicatorView/NVActivityIndicatorView-umbrella.h
+Pods/Target Support Files/NVActivityIndicatorView/NVActivityIndicatorView.modulemap
+Pods/Target Support Files/NVActivityIndicatorView/NVActivityIndicatorView.xcconfig
+Pods/Target Support Files/NYTPhotoViewer/Info.plist
+Pods/Target Support Files/NYTPhotoViewer/NYTPhotoViewer-dummy.m
+Pods/Target Support Files/NYTPhotoViewer/NYTPhotoViewer-prefix.pch
+Pods/Target Support Files/NYTPhotoViewer/NYTPhotoViewer-umbrella.h
+Pods/Target Support Files/NYTPhotoViewer/NYTPhotoViewer.modulemap
+Pods/Target Support Files/NYTPhotoViewer/NYTPhotoViewer.xcconfig
+Pods/Target Support Files/NYTPhotoViewer/ResourceBundle-NYTPhotoViewer-Info.plist
+Pods/Target Support Files/SendBirdChat/Info.plist
+Pods/Target Support Files/SendBirdChat/ResourceBundle-SendBirdChat-Info.plist
+Pods/Target Support Files/SendBirdChat/SendBirdChat-dummy.m
+Pods/Target Support Files/SendBirdChat/SendBirdChat-prefix.pch
+Pods/Target Support Files/SendBirdChat/SendBirdChat-umbrella.h
+Pods/Target Support Files/SendBirdChat/SendBirdChat.modulemap
+Pods/Target Support Files/SendBirdChat/SendBirdChat.xcconfig
+Pods/Target Support Files/TTTAttributedLabel/Info.plist
+Pods/Target Support Files/TTTAttributedLabel/TTTAttributedLabel-dummy.m
+Pods/Target Support Files/TTTAttributedLabel/TTTAttributedLabel-prefix.pch
+Pods/Target Support Files/TTTAttributedLabel/TTTAttributedLabel-umbrella.h
+Pods/Target Support Files/TTTAttributedLabel/TTTAttributedLabel.modulemap
+Pods/Target Support Files/TTTAttributedLabel/TTTAttributedLabel.xcconfig
+Pods/TTTAttributedLabel/LICENSE
+Pods/TTTAttributedLabel/README.md
+Pods/TTTAttributedLabel/TTTAttributedLabel/TTTAttributedLabel.h
+Pods/TTTAttributedLabel/TTTAttributedLabel/TTTAttributedLabel.m
