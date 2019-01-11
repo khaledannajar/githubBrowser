@@ -33,7 +33,7 @@ struct CodingKeys {
 class UserProfile : NSObject, NSCoding, Mappable {
     
     var avatarUrl : String?
-    var bio : Any?
+    var bio : String?
     var blog : String?
     var company : String?
     var createdAt : String?
@@ -45,7 +45,7 @@ class UserProfile : NSObject, NSCoding, Mappable {
     var followingUrl : String?
     var gistsUrl : String?
     var gravatarId : String?
-    var hireable : Any?
+    var hireable : Bool?
     var htmlUrl : String?
     var id : Int?
     var location : String?
@@ -114,7 +114,7 @@ class UserProfile : NSObject, NSCoding, Mappable {
     @objc required init(coder aDecoder: NSCoder)
     {
         avatarUrl = aDecoder.decodeObject(forKey: "avatar_url") as? String
-        bio = aDecoder.decodeObject(forKey: "bio")
+        bio = aDecoder.decodeObject(forKey: "bio") as? String
         blog = aDecoder.decodeObject(forKey: "blog") as? String
         company = aDecoder.decodeObject(forKey: "company") as? String
         createdAt = aDecoder.decodeObject(forKey: "created_at") as? String
@@ -126,7 +126,7 @@ class UserProfile : NSObject, NSCoding, Mappable {
         followingUrl = aDecoder.decodeObject(forKey: "following_url") as? String
         gistsUrl = aDecoder.decodeObject(forKey: "gists_url") as? String
         gravatarId = aDecoder.decodeObject(forKey: "gravatar_id") as? String
-        hireable = aDecoder.decodeObject(forKey: "hireable")
+        hireable = aDecoder.decodeObject(forKey: "hireable") as? Bool
         htmlUrl = aDecoder.decodeObject(forKey: "html_url") as? String
         id = aDecoder.decodeObject(forKey: "id") as? Int
         location = aDecoder.decodeObject(forKey: "location") as? String
