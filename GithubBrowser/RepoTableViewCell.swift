@@ -26,15 +26,16 @@ class RepoTableViewCell: UITableViewCell {
         didSet {
             repoNameLabel.text = item?.name ?? "Unknown"
             ownerNameLabel.text = item?.userProfile?.name ?? "Unknown"
-            let avatarUrl = item?.userProfile?.avatarUrl
-            let happyPlaceHolder = UIImage(named: "happy")
-            ownerAvatarImageView.setImageOfUrlStr(str: avatarUrl, placeHolder: happyPlaceHolder)
+            configureImageView()
         }
     }
     func configureImageView() {
+        let avatarUrl = item?.userProfile?.avatarUrl
+        let happyPlaceHolder = UIImage(named: "happy")
+        ownerAvatarImageView.setImageOfUrlStr(str: avatarUrl, placeHolder: happyPlaceHolder)
         ownerAvatarImageView.isUserInteractionEnabled = true
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(didTapAvatarImageView(sender:)))
-                ownerAvatarImageView.addGestureRecognizer(tapGestureRecognizer)
+        ownerAvatarImageView.addGestureRecognizer(tapGestureRecognizer)
     }
     @objc func didTapAvatarImageView(sender: Any) {
         if let item = item {
