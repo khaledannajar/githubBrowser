@@ -1077,3 +1077,56 @@ Pods/TTTAttributedLabel/LICENSE
 Pods/TTTAttributedLabel/README.md
 Pods/TTTAttributedLabel/TTTAttributedLabel/TTTAttributedLabel.h
 Pods/TTTAttributedLabel/TTTAttributedLabel/TTTAttributedLabel.m
+Pods/Kingfisher/Sources/Cache/CacheSerializer.swift
+Pods/Kingfisher/Sources/Cache/DiskStorage.swift
+Pods/Kingfisher/Sources/Cache/FormatIndicatedCacheSerializer.swift
+Pods/Kingfisher/Sources/Cache/ImageCache.swift
+Pods/Kingfisher/Sources/Cache/MemoryStorage.swift
+Pods/Kingfisher/Sources/Cache/Storage.swift
+Pods/Kingfisher/Sources/Extensions/ImageView+Kingfisher.swift
+Pods/Kingfisher/Sources/Extensions/UIButton+Kingfisher.swift
+Pods/Kingfisher/Sources/General/Deprecated.swift
+Pods/Kingfisher/Sources/General/Kingfisher.swift
+Pods/Kingfisher/Sources/General/KingfisherError.swift
+Pods/Kingfisher/Sources/General/KingfisherManager.swift
+Pods/Kingfisher/Sources/General/KingfisherOptionsInfo.swift
+Pods/Kingfisher/Sources/General/ImageSource/ImageDataProvider.swift
+Pods/Kingfisher/Sources/General/ImageSource/Resource.swift
+Pods/Kingfisher/Sources/General/ImageSource/Source.swift
+Pods/Kingfisher/Sources/Image/Filter.swift
+Pods/Kingfisher/Sources/Image/GIFAnimatedImage.swift
+Pods/Kingfisher/Sources/Image/Image.swift
+Pods/Kingfisher/Sources/Image/ImageDrawing.swift
+Pods/Kingfisher/Sources/Image/ImageFormat.swift
+Pods/Kingfisher/Sources/Image/ImageProcessor.swift
+Pods/Kingfisher/Sources/Image/ImageTransition.swift
+Pods/Kingfisher/Sources/Image/Placeholder.swift
+Pods/Kingfisher/Sources/Networking/AuthenticationChallengeResponsable.swift
+Pods/Kingfisher/Sources/Networking/ImageDataProcessor.swift
+Pods/Kingfisher/Sources/Networking/ImageDownloader.swift
+Pods/Kingfisher/Sources/Networking/ImageDownloaderDelegate.swift
+Pods/Kingfisher/Sources/Networking/ImageModifier.swift
+Pods/Kingfisher/Sources/Networking/ImagePrefetcher.swift
+Pods/Kingfisher/Sources/Networking/RequestModifier.swift
+Pods/Kingfisher/Sources/Networking/SessionDataTask.swift
+Pods/Kingfisher/Sources/Networking/SessionDelegate.swift
+Pods/Kingfisher/Sources/Utility/Box.swift
+Pods/Kingfisher/Sources/Utility/CallbackQueue.swift
+Pods/Kingfisher/Sources/Utility/Delegate.swift
+Pods/Kingfisher/Sources/Utility/ExtensionHelpers.swift
+Pods/Kingfisher/Sources/Utility/Result.swift
+Pods/Kingfisher/Sources/Utility/Runtime.swift
+Pods/Kingfisher/Sources/Utility/SizeExtensions.swift
+Pods/Kingfisher/Sources/Utility/String+MD5.swift
+Pods/Kingfisher/Sources/Views/AnimatedImageView.swift
+Pods/Kingfisher/Sources/Views/Indicator.swift
+Pods/Target Support Files/Pods-GithubBrowser/Info.plist
+Pods/Target Support Files/Pods-GithubBrowser/Pods-GithubBrowser-acknowledgements.markdown
+Pods/Target Support Files/Pods-GithubBrowser/Pods-GithubBrowser-acknowledgements.plist
+Pods/Target Support Files/Pods-GithubBrowser/Pods-GithubBrowser-dummy.m
+Pods/Target Support Files/Pods-GithubBrowser/Pods-GithubBrowser-frameworks.sh
+Pods/Target Support Files/Pods-GithubBrowser/Pods-GithubBrowser-resources.sh
+Pods/Target Support Files/Pods-GithubBrowser/Pods-GithubBrowser-umbrella.h
+Pods/Target Support Files/Pods-GithubBrowser/Pods-GithubBrowser.debug.xcconfig
+Pods/Target Support Files/Pods-GithubBrowser/Pods-GithubBrowser.modulemap
+Pods/Target Support Files/Pods-GithubBrowser/Pods-GithubBrowser.release.xcconfig
