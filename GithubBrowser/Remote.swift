@@ -24,7 +24,10 @@ class Remote: RemoteContext, Repository {
             completion(model, error)
         }
     }
-    
+}
+
+
+extension Remote: ListModel {
     func searchRepositories(params: SearchParams, completion: @escaping (SearchResults?, Error?) -> Void) {
         let pageSize = params.pagable.pageSize
         let pageNo = params.pagable.pageNo

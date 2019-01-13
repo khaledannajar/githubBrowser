@@ -14,6 +14,21 @@
 		29823E4F21EB4FB5001B5B9F /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29823E4C21EB4FB5001B5B9F /* SearchVC.swift */; };
 		29823E5021EB4FB5001B5B9F /* UserDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29823E4D21EB4FB5001B5B9F /* UserDetailsVC.swift */; };
 		29823E5121EB4FB5001B5B9F /* RepoDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29823E4E21EB4FB5001B5B9F /* RepoDetailsVC.swift */; };
+		29823E5321EB5372001B5B9F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29823E5221EB5372001B5B9F /* Coordinator.swift */; };
+		29823E5721EB5439001B5B9F /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29823E5621EB5439001B5B9F /* AppCoordinator.swift */; };
+		29823E5A21EB5CD4001B5B9F /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29823E5921EB5CD4001B5B9F /* Storyboard.swift */; };
+		29823E5C21EB5DE0001B5B9F /* SearchVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29823E5B21EB5DE0001B5B9F /* SearchVM.swift */; };
+		29823E5E21EB5E3D001B5B9F /* SearchContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29823E5D21EB5E3D001B5B9F /* SearchContract.swift */; };
+		29823E6021EB7172001B5B9F /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29823E5F21EB7172001B5B9F /* UIImageViewExtension.swift */; };
+		29823E6221EB71C6001B5B9F /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29823E6121EB71C6001B5B9F /* UIImageExtension.swift */; };
+		29823E6421EB723C001B5B9F /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29823E6321EB723C001B5B9F /* UIColorExtension.swift */; };
+		29823E6621EB75DE001B5B9F /* RepoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29823E6521EB75DE001B5B9F /* RepoTableViewCell.swift */; };
+		29823E6A21EBB8D7001B5B9F /* RepoDetailVMContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29823E6921EBB8D7001B5B9F /* RepoDetailVMContract.swift */; };
+		29823E6C21EBB8E6001B5B9F /* RepoDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29823E6B21EBB8E6001B5B9F /* RepoDetailCoordinator.swift */; };
+		29823E7221EBCA58001B5B9F /* UserDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29823E7121EBCA58001B5B9F /* UserDetailViewModel.swift */; };
+		29823E7421EBDBB9001B5B9F /* RepoDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29823E7321EBDBB8001B5B9F /* RepoDetailViewModel.swift */; };
+		29823E7621EBDBE3001B5B9F /* RepoDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29823E7521EBDBE3001B5B9F /* RepoDetailModel.swift */; };
+		29823E7821EBDD25001B5B9F /* SearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29823E7721EBDD25001B5B9F /* SearchCoordinator.swift */; };
 		298ECEA321E8884E00B98719 /* License.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298ECE9F21E8884E00B98719 /* License.swift */; };
 		298ECEA421E8884E00B98719 /* SearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298ECEA021E8884E00B98719 /* SearchResults.swift */; };
 		298ECEA521E8884E00B98719 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298ECEA121E8884E00B98719 /* UserProfile.swift */; };
@@ -38,6 +53,21 @@
 		29823E4C21EB4FB5001B5B9F /* SearchVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		29823E4D21EB4FB5001B5B9F /* UserDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailsVC.swift; sourceTree = "<group>"; };
 		29823E4E21EB4FB5001B5B9F /* RepoDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoDetailsVC.swift; sourceTree = "<group>"; };
+		29823E5221EB5372001B5B9F /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		29823E5621EB5439001B5B9F /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		29823E5921EB5CD4001B5B9F /* Storyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
+		29823E5B21EB5DE0001B5B9F /* SearchVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVM.swift; sourceTree = "<group>"; };
+		29823E5D21EB5E3D001B5B9F /* SearchContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchContract.swift; sourceTree = "<group>"; };
+		29823E5F21EB7172001B5B9F /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		29823E6121EB71C6001B5B9F /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		29823E6321EB723C001B5B9F /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		29823E6521EB75DE001B5B9F /* RepoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoTableViewCell.swift; sourceTree = "<group>"; };
+		29823E6921EBB8D7001B5B9F /* RepoDetailVMContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDetailVMContract.swift; sourceTree = "<group>"; };
+		29823E6B21EBB8E6001B5B9F /* RepoDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDetailCoordinator.swift; sourceTree = "<group>"; };
+		29823E7121EBCA58001B5B9F /* UserDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewModel.swift; sourceTree = "<group>"; };
+		29823E7321EBDBB8001B5B9F /* RepoDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoDetailViewModel.swift; sourceTree = "<group>"; };
+		29823E7521EBDBE3001B5B9F /* RepoDetailModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoDetailModel.swift; sourceTree = "<group>"; };
+		29823E7721EBDD25001B5B9F /* SearchCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCoordinator.swift; sourceTree = "<group>"; };
 		298ECE9F21E8884E00B98719 /* License.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = License.swift; sourceTree = "<group>"; };
 		298ECEA021E8884E00B98719 /* SearchResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResults.swift; sourceTree = "<group>"; };
 		298ECEA121E8884E00B98719 /* UserProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
@@ -89,16 +119,55 @@
 			children = (
 				295701B421E8709E0099D2ED /* AppDelegate.swift */,
 				295701B821E8709E0099D2ED /* Main.storyboard */,
-				29823E4E21EB4FB5001B5B9F /* RepoDetailsVC.swift */,
-				29823E4C21EB4FB5001B5B9F /* SearchVC.swift */,
+				29823E5221EB5372001B5B9F /* Coordinator.swift */,
+				29823E5621EB5439001B5B9F /* AppCoordinator.swift */,
+				29823E7921EBDD76001B5B9F /* Search */,
+				29823E7A21EBDE05001B5B9F /* repoDetails */,
+				29823E7121EBCA58001B5B9F /* UserDetailViewModel.swift */,
 				29823E4D21EB4FB5001B5B9F /* UserDetailsVC.swift */,
 				298ECEB521E90E1200B98719 /* Repository */,
 				298ECEA921E88EA800B98719 /* models */,
+				29823E5821EB5CD4001B5B9F /* extensions */,
 				295701BB21E870A00099D2ED /* Assets.xcassets */,
 				295701BD21E870A00099D2ED /* LaunchScreen.storyboard */,
 				295701C021E870A00099D2ED /* Info.plist */,
 			);
 			path = GithubBrowser;
+			sourceTree = "<group>";
+		};
+		29823E5821EB5CD4001B5B9F /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				29823E5921EB5CD4001B5B9F /* Storyboard.swift */,
+				29823E5F21EB7172001B5B9F /* UIImageViewExtension.swift */,
+				29823E6121EB71C6001B5B9F /* UIImageExtension.swift */,
+				29823E6321EB723C001B5B9F /* UIColorExtension.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		29823E7921EBDD76001B5B9F /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				29823E5D21EB5E3D001B5B9F /* SearchContract.swift */,
+				29823E7721EBDD25001B5B9F /* SearchCoordinator.swift */,
+				29823E4C21EB4FB5001B5B9F /* SearchVC.swift */,
+				29823E6521EB75DE001B5B9F /* RepoTableViewCell.swift */,
+				29823E5B21EB5DE0001B5B9F /* SearchVM.swift */,
+			);
+			name = Search;
+			sourceTree = "<group>";
+		};
+		29823E7A21EBDE05001B5B9F /* repoDetails */ = {
+			isa = PBXGroup;
+			children = (
+				29823E4E21EB4FB5001B5B9F /* RepoDetailsVC.swift */,
+				29823E6B21EBB8E6001B5B9F /* RepoDetailCoordinator.swift */,
+				29823E6921EBB8D7001B5B9F /* RepoDetailVMContract.swift */,
+				29823E7321EBDBB8001B5B9F /* RepoDetailViewModel.swift */,
+				29823E7521EBDBE3001B5B9F /* RepoDetailModel.swift */,
+			);
+			name = repoDetails;
 			sourceTree = "<group>";
 		};
 		298ECEA921E88EA800B98719 /* models */ = {
@@ -261,20 +330,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29823E5321EB5372001B5B9F /* Coordinator.swift in Sources */,
 				298ECEB721E9101000B98719 /* SearchParams.swift in Sources */,
+				29823E6221EB71C6001B5B9F /* UIImageExtension.swift in Sources */,
 				29823E5121EB4FB5001B5B9F /* RepoDetailsVC.swift in Sources */,
+				29823E6A21EBB8D7001B5B9F /* RepoDetailVMContract.swift in Sources */,
 				298ECEA621E8884E00B98719 /* CodeRepository.swift in Sources */,
 				298ECEB321E8DC3D00B98719 /* Router.swift in Sources */,
 				295701B521E8709E0099D2ED /* AppDelegate.swift in Sources */,
+				29823E6021EB7172001B5B9F /* UIImageViewExtension.swift in Sources */,
+				29823E5C21EB5DE0001B5B9F /* SearchVM.swift in Sources */,
+				29823E5E21EB5E3D001B5B9F /* SearchContract.swift in Sources */,
+				29823E5721EB5439001B5B9F /* AppCoordinator.swift in Sources */,
+				29823E6421EB723C001B5B9F /* UIColorExtension.swift in Sources */,
+				29823E7621EBDBE3001B5B9F /* RepoDetailModel.swift in Sources */,
 				298ECEAF21E8DA8600B98719 /* Remote.swift in Sources */,
 				298ECEB921E9102B00B98719 /* Pageable.swift in Sources */,
+				29823E7821EBDD25001B5B9F /* SearchCoordinator.swift in Sources */,
+				29823E7421EBDBB9001B5B9F /* RepoDetailViewModel.swift in Sources */,
 				298ECEBF21E9202A00B98719 /* Repository.swift in Sources */,
+				29823E5A21EB5CD4001B5B9F /* Storyboard.swift in Sources */,
 				298ECEA521E8884E00B98719 /* UserProfile.swift in Sources */,
 				298ECEA421E8884E00B98719 /* SearchResults.swift in Sources */,
 				298ECEA321E8884E00B98719 /* License.swift in Sources */,
+				29823E6C21EBB8E6001B5B9F /* RepoDetailCoordinator.swift in Sources */,
 				29823E4F21EB4FB5001B5B9F /* SearchVC.swift in Sources */,
 				298ECEB221E8DC3D00B98719 /* RoutersProtocol.swift in Sources */,
+				29823E7221EBCA58001B5B9F /* UserDetailViewModel.swift in Sources */,
 				29823E5021EB4FB5001B5B9F /* UserDetailsVC.swift in Sources */,
+				29823E6621EB75DE001B5B9F /* RepoTableViewCell.swift in Sources */,
 				298ECEAD21E8D59F00B98719 /* RemoteContext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
