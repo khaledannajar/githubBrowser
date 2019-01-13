@@ -8,13 +8,20 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SearchVC: UIViewController {
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
-
+    @IBAction func openRepo(_ sender: Any) {
+        
+    }
+    
+    @IBAction func openUser(_ sender: Any) {
+        
+    }
 }
 
