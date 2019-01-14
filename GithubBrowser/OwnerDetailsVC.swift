@@ -52,6 +52,12 @@ class OwnerDetailsVC: UIViewController {
         loadingView.isHidden = false
         loadingView.startAnimating()
     }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        if self.isMovingFromParent {
+            viewModel?.done()
+        }
+    }
 }
 
 

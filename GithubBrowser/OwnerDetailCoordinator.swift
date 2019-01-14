@@ -17,11 +17,11 @@ class OwnerDetailCoordinator: Coordinator {
     weak var delegate: OwnerDetailCoordinatorDelegate?
     let dataItem: OwnerProfile
     let repository: Repository
-    var window: UIWindow
+    var navController: UINavigationController
     
-    init(window: UIWindow, dataItem: OwnerProfile, repository: Repository)
+    init(navController: UINavigationController, dataItem: OwnerProfile, repository: Repository)
     {
-        self.window = window
+        self.navController = navController
         self.dataItem = dataItem
         self.repository = repository
     }
@@ -32,7 +32,7 @@ class OwnerDetailCoordinator: Coordinator {
         viewModel.model = OwnerDetailModel(userProfile: dataItem, repository: repository)
         viewModel.coordinatorDelegate = self
         vc.viewModel = viewModel
-        window.rootViewController = vc
+        navController.pushViewController(vc, animated: true)
     }
 }
 

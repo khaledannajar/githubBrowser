@@ -18,25 +18,23 @@ class RepoDetailCoordinator: Coordinator
     weak var delegate: DetailCoordinatorDelegate?
     let dataItem: CodeRepository
     let repository: Repository
-    var window: UIWindow
+    var navController: UINavigationController
     var repoDetailVC: RepoDetailsVC?
     
-    init(window: UIWindow, dataItem: CodeRepository,  repository: Repository)
+    init(navController: UINavigationController, dataItem: CodeRepository,  repository: Repository)
     {
-        self.window = window
+        self.navController = navController
         self.dataItem = dataItem
         self.repository = repository
     }
     
-    func start()
-    {
+    func start() {
         repoDetailVC = Storyboards.Main.viewController(viewControllerClass: RepoDetailsVC.self)
         let viewModel =  RepoDetailViewModel()
         viewModel.model = RepoDetailModel(detailItem: dataItem)
         viewModel.coordinatorDelegate = self
         repoDetailVC?.viewModel = viewModel
-        window.rootViewController = repoDetailVC
-        
+        navController.pushViewController(repoDetailVC!, animated: true)
     }
 }
 
@@ -48,8 +46,7 @@ extension RepoDetailCoordinator: DetailViewModelCoordinatorDelegate
         delegate?.detailCoordinatorDidFinish(detailCoordinator: self)
     }
     func showOwnerProfile(owner: OwnerProfile) {
-        //TODO: fix this
-        let ownerDetailCoordinator = OwnerDetailCoordinator(window: window, dataItem: owner, repository: repository)
+        let ownerDetailCoordinator = OwnerDetailCoordinator(navController: navController, dataItem: owner, repository: repository)
         ownerDetailCoordinator.delegate = self
         ownerDetailCoordinator.start()
     }
@@ -58,6 +55,6 @@ extension RepoDetailCoordinator: DetailViewModelCoordinatorDelegate
 
 extension RepoDetailCoordinator: OwnerDetailCoordinatorDelegate {
     func detailCoordinatorDidFinish(detailCoordinator: OwnerDetailCoordinator) {
-        window.rootViewController = repoDetailVC
+        
     }
 }

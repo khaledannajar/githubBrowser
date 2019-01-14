@@ -12,12 +12,12 @@ class AppCoordinator: Coordinator
 {
     fileprivate let LIST_KEY: String  = "List"
     
-    var window: UIWindow
+    var rootControler: UINavigationController
     var coordinators = [String:Coordinator]()
     let repository: Repository = Remote()
     
-    init(window: UIWindow) {
-        self.window = window
+    init(navController: UINavigationController) {
+        self.rootControler = navController
     }
     
     func start() {
@@ -29,7 +29,7 @@ extension AppCoordinator: SearchCoordinatorDelegate
 {
     func showList()
     {
-        let listCoordinator = SearchCoordinator(window: window, repository: repository)
+        let listCoordinator = SearchCoordinator(navController: rootControler, repository: repository)
         coordinators[LIST_KEY] = listCoordinator
         listCoordinator.delegate = self
         listCoordinator.start()

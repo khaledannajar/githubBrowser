@@ -18,13 +18,13 @@ class SearchCoordinator: Coordinator
     weak var delegate: SearchCoordinatorDelegate?
     var detailCoordinator: RepoDetailCoordinator?
     var ownerDetailCoordinator: OwnerDetailCoordinator?
-    var window: UIWindow
     var repository: Repository
     var searchVC: SearchVC?
+    var navController: UINavigationController
     
-    init(window: UIWindow, repository: Repository)
+    init(navController: UINavigationController, repository: Repository)
     {
-        self.window = window
+        self.navController = navController
         self.repository = repository
     }
     func start() {
@@ -33,19 +33,19 @@ class SearchCoordinator: Coordinator
         viewModel.model = repository
         viewModel.coordinatorDelegate = self
         searchVC?.viewModel = viewModel
-        window.rootViewController = searchVC
+        navController.viewControllers = [searchVC!]
     }
 }
 
 extension SearchCoordinator: ListViewModelCoordinatorDelegate {
     func listViewModelDidSelectRepo(_ viewModel: ListViewModel, data: CodeRepository) {
-        detailCoordinator = RepoDetailCoordinator(window: window, dataItem: data, repository: repository)
+        detailCoordinator = RepoDetailCoordinator(navController: navController, dataItem: data, repository: repository)
         detailCoordinator?.delegate = self
         detailCoordinator?.start()
     }
     
     func listViewModelDidSelectUser(_ viewModel: ListViewModel, data: OwnerProfile) {
-        ownerDetailCoordinator = OwnerDetailCoordinator(window: window, dataItem: data, repository: repository)
+        ownerDetailCoordinator = OwnerDetailCoordinator(navController: navController, dataItem: data, repository: repository)
         ownerDetailCoordinator?.delegate = self
         ownerDetailCoordinator?.start()
     }
@@ -57,12 +57,10 @@ extension SearchCoordinator: DetailCoordinatorDelegate
     func detailCoordinatorDidFinish(detailCoordinator: RepoDetailCoordinator)
     {
         self.detailCoordinator = nil
-        window.rootViewController = searchVC
     }
 }
 extension SearchCoordinator: OwnerDetailCoordinatorDelegate {
     func detailCoordinatorDidFinish(detailCoordinator: OwnerDetailCoordinator) {
         self.ownerDetailCoordinator = nil
-        window.rootViewController = searchVC
     }
 }

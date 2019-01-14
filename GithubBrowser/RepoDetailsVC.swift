@@ -52,8 +52,11 @@ class RepoDetailsVC: UIViewController {
         viewModel?.showOwnerProfile()
     }
     
-    @IBAction func doneButtonPressed(_ sender: AnyObject) {
-        viewModel?.done();
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        if self.isMovingFromParent {
+            viewModel?.done()
+        }
     }
 }
 
