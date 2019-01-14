@@ -12,6 +12,7 @@ public protocol OwnerDetailViewModelViewDelegate: class
 {
     func detailDidChange(viewModel: OwnerDetailViewModelContract)
     func repositoriesLoaded(viewModel: OwnerDetailViewModelContract)
+    func errorMessageDidChange(_ viewModel: ListViewModel)
 }
 
 
@@ -25,7 +26,7 @@ public protocol OwnerDetailViewModelContract
     var model: OwnerModel? { get set }
     var viewDelegate: OwnerDetailViewModelViewDelegate? { get set }
     var coordinatorDelegate: OwnerDetailViewModelCoordinatorDelegate? { get set}
-    
+    var errorMessage: String? { get }
     var numberOfItems: Int { get }
     func itemAtIndex(_ index: Int) -> CodeRepository?
     var title: String { get }

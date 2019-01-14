@@ -11,6 +11,7 @@ import Foundation
 enum OwnerDetailCellType {
     case userCell, repoCell
 }
+private let ownerCellPlaceHolder = 1
 
 class OwnerDetailViewModel: OwnerDetailViewModelContract {
  
@@ -26,10 +27,20 @@ class OwnerDetailViewModel: OwnerDetailViewModelContract {
             }
         }
     }
+    public private(set) var errorMessage: String?
     func getRepositories(name: String) {
         model?.getRepositories(user: name, completion: { [weak self] (repos, error) in
+            
             self?.repos = repos
-            self?.viewDelegate?.repositoriesLoaded(viewModel: self!)
+            if repos != nil {
+                self?.viewDelegate?.repositoriesLoaded(viewModel: self!)
+            } else {
+                if let error = error {
+                    self?.errorMessage = error.localizedDescription
+                } else {
+                    self?.errorMessage = "Unexpected error. Please try again"
+                }
+            }
         })
     }
     var detail: OwnerProfile? { return model?.detail }
@@ -41,14 +52,14 @@ class OwnerDetailViewModel: OwnerDetailViewModelContract {
     
     var numberOfItems: Int {
         if let items = repos {
-            return items.count
+            return items.count + ownerCellPlaceHolder
         }
         return 0
     }
     
     func itemAtIndex(_ index: Int) -> CodeRepository? {
         if let items = repos , items.count > index {
-            return items[index]
+            return items[index - ownerCellPlaceHolder]
         }
         return nil
     }

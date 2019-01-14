@@ -29,8 +29,7 @@ class OwnerDetailsVC: UIViewController {
         
         tableView.delegate = self
         tableView.dataSource = self
-        
-        hideLoadingView()
+        showLoadingView()
         isLoaded = true
         refreshDisplay();
     }
@@ -38,7 +37,6 @@ class OwnerDetailsVC: UIViewController {
     func refreshDisplay() {
         title = viewModel?.title ?? ""
         if isLoaded && viewModel != nil {
-            
             self.tableView.reloadData()
         }
     }
@@ -75,21 +73,38 @@ extension OwnerDetailsVC: UITableViewDelegate, UITableViewDataSource
     }
   
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
+        if indexPath.row == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "OwnerDataCell", for: indexPath) as! OwnerDataCell
+            cell.nameLabel.text = viewModel?.detail?.name ?? viewModel?.detail?.login
+            cell.emailLabel.text = viewModel?.detail?.email
+            cell.ownerImageView.setImageOfUrlStr(str: viewModel?.avatarUrl, placeHolder: UIImage(named: "happy"))
+            return cell
+        }
         let cell = tableView.dequeueReusableCell(withIdentifier: "RightDetailCell", for: indexPath)
         let item = viewModel?.itemAtIndex(indexPath.row)
         cell.textLabel?.text = item?.name
         cell.detailTextLabel?.text = item?.language
         return cell
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
 }
 
 extension OwnerDetailsVC: OwnerDetailViewModelViewDelegate {
     func detailDidChange(viewModel: OwnerDetailViewModelContract) {
         refreshDisplay()
+        hideLoadingView()
     }
     func repositoriesLoaded(viewModel: OwnerDetailViewModelContract) {
         refreshDisplay()
+        hideLoadingView()
+    }
+    func errorMessageDidChange(_ viewModel: ListViewModel) {
+        
+        //TODO: show error message
+        debugPrint(viewModel.errorMessage)
+        hideLoadingView()
     }
 }
 extension OwnerDetailsVC: RepoTableViewCellDelegate {

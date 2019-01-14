@@ -224,26 +224,53 @@
                                             <outlet property="repoNameLabel" destination="mlT-kR-VDi" id="2OW-Mc-WLz"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="OwnerDataCell" rowHeight="187" id="6vF-47-gE2" customClass="OwnerDataCell" customModule="GithubBrowser" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="72" width="375" height="187"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="OwnerDataCell" rowHeight="103" id="H6d-aO-6fN" customClass="OwnerDataCell" customModule="GithubBrowser" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="72" width="375" height="103"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6vF-47-gE2" id="Uvt-nS-tn8">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="186.5"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="H6d-aO-6fN" id="Vp6-4Y-iw0">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="102.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="github4" translatesAutoresizingMaskIntoConstraints="NO" id="uoN-T5-ze7">
-                                                    <rect key="frame" x="8" y="5" width="359" height="149.5"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="252" verticalHuggingPriority="252" image="github4" translatesAutoresizingMaskIntoConstraints="NO" id="rDg-jF-0A5">
+                                                    <rect key="frame" x="8" y="8" width="95" height="95"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="95" id="PTI-bs-IJm"/>
+                                                        <constraint firstAttribute="height" constant="95" id="c74-aO-HAc"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p38-1L-Txt">
-                                                    <rect key="frame" x="166" y="160" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2XU-rR-wYI">
+                                                    <rect key="frame" x="111" y="8" width="100" height="20.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="100" id="wT9-RA-IsU"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MOx-fb-QLw">
+                                                    <rect key="frame" x="111" y="36.5" width="42" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="rDg-jF-0A5" firstAttribute="leading" secondItem="Vp6-4Y-iw0" secondAttribute="leading" constant="8" id="BJ4-A9-YHB"/>
+                                                <constraint firstAttribute="bottom" secondItem="rDg-jF-0A5" secondAttribute="bottom" constant="-0.5" id="Dv4-iz-dif"/>
+                                                <constraint firstItem="MOx-fb-QLw" firstAttribute="leading" secondItem="rDg-jF-0A5" secondAttribute="trailing" constant="8" id="W2O-DL-xa6"/>
+                                                <constraint firstItem="rDg-jF-0A5" firstAttribute="top" secondItem="Vp6-4Y-iw0" secondAttribute="top" constant="8" id="Wu0-QX-pqn"/>
+                                                <constraint firstItem="MOx-fb-QLw" firstAttribute="trailing" secondItem="Vp6-4Y-iw0" secondAttribute="trailingMargin" constant="8" id="cKd-15-Eoq"/>
+                                                <constraint firstItem="MOx-fb-QLw" firstAttribute="top" secondItem="2XU-rR-wYI" secondAttribute="bottom" constant="8" id="eXg-Wt-ExE"/>
+                                                <constraint firstItem="2XU-rR-wYI" firstAttribute="trailing" secondItem="Vp6-4Y-iw0" secondAttribute="trailingMargin" constant="8" id="kun-OZ-r89"/>
+                                                <constraint firstItem="2XU-rR-wYI" firstAttribute="leading" secondItem="rDg-jF-0A5" secondAttribute="trailing" constant="8" id="qSs-Z8-tBS"/>
+                                                <constraint firstItem="2XU-rR-wYI" firstAttribute="top" secondItem="Vp6-4Y-iw0" secondAttribute="top" constant="8" id="qg0-1B-NlY"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="emailLabel" destination="MOx-fb-QLw" id="6km-Bj-0aL"/>
+                                            <outlet property="nameLabel" destination="2XU-rR-wYI" id="IcJ-GL-z0I"/>
+                                            <outlet property="ownerImageView" destination="rDg-jF-0A5" id="Snx-JL-TDf"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
