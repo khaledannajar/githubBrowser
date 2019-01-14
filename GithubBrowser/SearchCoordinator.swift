@@ -17,6 +17,7 @@ class SearchCoordinator: Coordinator
 {
     weak var delegate: SearchCoordinatorDelegate?
     var detailCoordinator: RepoDetailCoordinator?
+    var ownerDetailCoordinator: OwnerDetailCoordinator?
     var window: UIWindow
     var repository: Repository
     var searchVC: SearchVC?
@@ -38,15 +39,16 @@ class SearchCoordinator: Coordinator
 
 extension SearchCoordinator: ListViewModelCoordinatorDelegate {
     func listViewModelDidSelectRepo(_ viewModel: ListViewModel, data: CodeRepository) {
-        detailCoordinator = RepoDetailCoordinator(window: window, dataItem: data)
+        detailCoordinator = RepoDetailCoordinator(window: window, dataItem: data, repository: repository)
         detailCoordinator?.delegate = self
         detailCoordinator?.start()
     }
     
-    func listViewModelDidSelectUser(_ viewModel: ListViewModel, data: UserProfile) {
-//        TODO:open user profile coordinator
+    func listViewModelDidSelectUser(_ viewModel: ListViewModel, data: OwnerProfile) {
+        ownerDetailCoordinator = OwnerDetailCoordinator(window: window, dataItem: data, repository: repository)
+        ownerDetailCoordinator?.delegate = self
+        ownerDetailCoordinator?.start()
     }
-    
     
 }
 
@@ -55,6 +57,12 @@ extension SearchCoordinator: DetailCoordinatorDelegate
     func detailCoordinatorDidFinish(detailCoordinator: RepoDetailCoordinator)
     {
         self.detailCoordinator = nil
+        window.rootViewController = searchVC
+    }
+}
+extension SearchCoordinator: OwnerDetailCoordinatorDelegate {
+    func detailCoordinatorDidFinish(detailCoordinator: OwnerDetailCoordinator) {
+        self.ownerDetailCoordinator = nil
         window.rootViewController = searchVC
     }
 }

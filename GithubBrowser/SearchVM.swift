@@ -63,7 +63,7 @@ class MVVMCListViewModel: ListViewModel {
         }
     }
     
-    func useOwnerProfile(owner: UserProfile) {
+    func useOwnerProfile(owner: OwnerProfile) {
         coordinatorDelegate?.listViewModelDidSelectUser(self, data: owner)
     }
     

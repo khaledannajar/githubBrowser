@@ -17,7 +17,7 @@ protocol ListViewModelViewDelegate: class
 protocol ListViewModelCoordinatorDelegate: class
 {
     func listViewModelDidSelectRepo(_ viewModel: ListViewModel, data: CodeRepository)
-    func listViewModelDidSelectUser(_ viewModel: ListViewModel, data: UserProfile)
+    func listViewModelDidSelectUser(_ viewModel: ListViewModel, data: OwnerProfile)
 }
 
 protocol ListViewModel {
@@ -30,7 +30,7 @@ protocol ListViewModel {
     var numberOfItems: Int { get }
     func itemAtIndex(_ index: Int) -> CodeRepository?
     func useItemAtIndex(_ index: Int)
-    func useOwnerProfile(owner: UserProfile)
+    func useOwnerProfile(owner: OwnerProfile)
     func search(token: String)
     func getNext()
 }

@@ -17,22 +17,25 @@ class RepoDetailCoordinator: Coordinator
 {
     weak var delegate: DetailCoordinatorDelegate?
     let dataItem: CodeRepository
+    let repository: Repository
     var window: UIWindow
+    var repoDetailVC: RepoDetailsVC?
     
-    init(window: UIWindow, dataItem: CodeRepository)
+    init(window: UIWindow, dataItem: CodeRepository,  repository: Repository)
     {
         self.window = window
         self.dataItem = dataItem
+        self.repository = repository
     }
     
     func start()
     {
-        let vc = Storyboards.Main.viewController(viewControllerClass: RepoDetailsVC.self)
+        repoDetailVC = Storyboards.Main.viewController(viewControllerClass: RepoDetailsVC.self)
         let viewModel =  RepoDetailViewModel()
         viewModel.model = RepoDetailModel(detailItem: dataItem)
         viewModel.coordinatorDelegate = self
-        vc.viewModel = viewModel
-        window.rootViewController = vc
+        repoDetailVC?.viewModel = viewModel
+        window.rootViewController = repoDetailVC
         
     }
 }
@@ -44,10 +47,17 @@ extension RepoDetailCoordinator: DetailViewModelCoordinatorDelegate
     {
         delegate?.detailCoordinatorDidFinish(detailCoordinator: self)
     }
-    func showOwnerProfile(owner: UserProfile) {
+    func showOwnerProfile(owner: OwnerProfile) {
         //TODO: fix this
-        let vc = Storyboards.Main.viewController(viewControllerClass: UserDetailsVC.self)
-        window.rootViewController = vc
+        let ownerDetailCoordinator = OwnerDetailCoordinator(window: window, dataItem: owner, repository: repository)
+        ownerDetailCoordinator.delegate = self
+        ownerDetailCoordinator.start()
     }
 }
 
+
+extension RepoDetailCoordinator: OwnerDetailCoordinatorDelegate {
+    func detailCoordinatorDidFinish(detailCoordinator: OwnerDetailCoordinator) {
+        window.rootViewController = repoDetailVC
+    }
+}

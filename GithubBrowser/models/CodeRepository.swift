@@ -63,7 +63,7 @@ class CodeRepository : NSObject, NSCoding, Mappable {
     var notificationsUrl : String?
     var openIssues : Int?
     var openIssuesCount : Int?
-    var userProfile : UserProfile?
+    var userProfile : OwnerProfile?
     var privateField : Bool?
     var pullsUrl : String?
     var pushedAt : String?
@@ -227,7 +227,7 @@ class CodeRepository : NSObject, NSCoding, Mappable {
         notificationsUrl = aDecoder.decodeObject(forKey: "notifications_url") as? String
         openIssues = aDecoder.decodeObject(forKey: "open_issues") as? Int
         openIssuesCount = aDecoder.decodeObject(forKey: "open_issues_count") as? Int
-        userProfile = aDecoder.decodeObject(forKey: "owner") as? UserProfile
+        userProfile = aDecoder.decodeObject(forKey: "owner") as? OwnerProfile
         privateField = aDecoder.decodeObject(forKey: "private") as? Bool
         pullsUrl = aDecoder.decodeObject(forKey: "pulls_url") as? String
         pushedAt = aDecoder.decodeObject(forKey: "pushed_at") as? String

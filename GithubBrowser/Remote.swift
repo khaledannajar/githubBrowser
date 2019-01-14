@@ -18,9 +18,9 @@ class Remote: RemoteContext, Repository {
         }
     }
     
-    func getProfile(user: String, completion: @escaping (UserProfile?, Error?) -> Void) {
+    func getProfile(user: String, completion: @escaping (OwnerProfile?, Error?) -> Void) {
         let requestConverter = Router.User.get(params: user, queryItems: nil)
-        doRequest(request: requestConverter) { (model:UserProfile?, error) in
+        doRequest(request: requestConverter) { (model:OwnerProfile?, error) in
             completion(model, error)
         }
     }

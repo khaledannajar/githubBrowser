@@ -30,14 +30,14 @@ struct CodingKeys {
     let url = "url"
 }
 
-class UserProfile : NSObject, NSCoding, Mappable {
+class OwnerProfile : NSObject, NSCoding, Mappable {
     
     var avatarUrl : String?
     var bio : String?
     var blog : String?
     var company : String?
     var createdAt : String?
-    var email : Any?
+    var email : String?
     var eventsUrl : String?
     var followers : Int?
     var followersUrl : String?
@@ -66,7 +66,7 @@ class UserProfile : NSObject, NSCoding, Mappable {
     
     
     class func newInstance(map: Map) -> Mappable? {
-        return UserProfile()
+        return OwnerProfile()
     }
     required init?(map: Map){}
     private override init(){}
@@ -118,7 +118,7 @@ class UserProfile : NSObject, NSCoding, Mappable {
         blog = aDecoder.decodeObject(forKey: "blog") as? String
         company = aDecoder.decodeObject(forKey: "company") as? String
         createdAt = aDecoder.decodeObject(forKey: "created_at") as? String
-        email = aDecoder.decodeObject(forKey: "email")
+        email = aDecoder.decodeObject(forKey: "email") as? String
         eventsUrl = aDecoder.decodeObject(forKey: "events_url") as? String
         followers = aDecoder.decodeObject(forKey: "followers") as? Int
         followersUrl = aDecoder.decodeObject(forKey: "followers_url") as? String

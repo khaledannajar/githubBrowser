@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2944A6A121EC3FC0004B81DF /* UserDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2944A6A021EC3FC0004B81DF /* UserDataCell.swift */; };
+		2944A6A321EC416A004B81DF /* OwnerDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2944A6A221EC416A004B81DF /* OwnerDetailCoordinator.swift */; };
 		295701B521E8709E0099D2ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295701B421E8709E0099D2ED /* AppDelegate.swift */; };
 		295701BA21E8709E0099D2ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 295701B821E8709E0099D2ED /* Main.storyboard */; };
 		295701BC21E870A00099D2ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 295701BB21E870A00099D2ED /* Assets.xcassets */; };
 		295701BF21E870A00099D2ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 295701BD21E870A00099D2ED /* LaunchScreen.storyboard */; };
 		29823E4F21EB4FB5001B5B9F /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29823E4C21EB4FB5001B5B9F /* SearchVC.swift */; };
-		29823E5021EB4FB5001B5B9F /* UserDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29823E4D21EB4FB5001B5B9F /* UserDetailsVC.swift */; };
+		29823E5021EB4FB5001B5B9F /* OwnerDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29823E4D21EB4FB5001B5B9F /* OwnerDetailsVC.swift */; };
 		29823E5121EB4FB5001B5B9F /* RepoDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29823E4E21EB4FB5001B5B9F /* RepoDetailsVC.swift */; };
 		29823E5321EB5372001B5B9F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29823E5221EB5372001B5B9F /* Coordinator.swift */; };
 		29823E5721EB5439001B5B9F /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29823E5621EB5439001B5B9F /* AppCoordinator.swift */; };
@@ -25,13 +27,15 @@
 		29823E6621EB75DE001B5B9F /* RepoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29823E6521EB75DE001B5B9F /* RepoTableViewCell.swift */; };
 		29823E6A21EBB8D7001B5B9F /* RepoDetailVMContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29823E6921EBB8D7001B5B9F /* RepoDetailVMContract.swift */; };
 		29823E6C21EBB8E6001B5B9F /* RepoDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29823E6B21EBB8E6001B5B9F /* RepoDetailCoordinator.swift */; };
-		29823E7221EBCA58001B5B9F /* UserDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29823E7121EBCA58001B5B9F /* UserDetailViewModel.swift */; };
+		29823E7221EBCA58001B5B9F /* UserDetailVMContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29823E7121EBCA58001B5B9F /* UserDetailVMContract.swift */; };
 		29823E7421EBDBB9001B5B9F /* RepoDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29823E7321EBDBB8001B5B9F /* RepoDetailViewModel.swift */; };
 		29823E7621EBDBE3001B5B9F /* RepoDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29823E7521EBDBE3001B5B9F /* RepoDetailModel.swift */; };
 		29823E7821EBDD25001B5B9F /* SearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29823E7721EBDD25001B5B9F /* SearchCoordinator.swift */; };
+		29823E7C21EBE499001B5B9F /* OwnerDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29823E7B21EBE499001B5B9F /* OwnerDetailViewModel.swift */; };
+		29823E8021EBE56E001B5B9F /* OwnerDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29823E7F21EBE56E001B5B9F /* OwnerDetailModel.swift */; };
 		298ECEA321E8884E00B98719 /* License.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298ECE9F21E8884E00B98719 /* License.swift */; };
 		298ECEA421E8884E00B98719 /* SearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298ECEA021E8884E00B98719 /* SearchResults.swift */; };
-		298ECEA521E8884E00B98719 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298ECEA121E8884E00B98719 /* UserProfile.swift */; };
+		298ECEA521E8884E00B98719 /* OwnerProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298ECEA121E8884E00B98719 /* OwnerProfile.swift */; };
 		298ECEA621E8884E00B98719 /* CodeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298ECEA221E8884E00B98719 /* CodeRepository.swift */; };
 		298ECEAD21E8D59F00B98719 /* RemoteContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298ECEAC21E8D59F00B98719 /* RemoteContext.swift */; };
 		298ECEAF21E8DA8600B98719 /* Remote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298ECEAE21E8DA8600B98719 /* Remote.swift */; };
@@ -44,6 +48,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2944A6A021EC3FC0004B81DF /* UserDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataCell.swift; sourceTree = "<group>"; };
+		2944A6A221EC416A004B81DF /* OwnerDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerDetailCoordinator.swift; sourceTree = "<group>"; };
 		295701B121E8709E0099D2ED /* GithubBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		295701B421E8709E0099D2ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		295701B921E8709E0099D2ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -51,7 +57,7 @@
 		295701BE21E870A00099D2ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		295701C021E870A00099D2ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29823E4C21EB4FB5001B5B9F /* SearchVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
-		29823E4D21EB4FB5001B5B9F /* UserDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailsVC.swift; sourceTree = "<group>"; };
+		29823E4D21EB4FB5001B5B9F /* OwnerDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OwnerDetailsVC.swift; sourceTree = "<group>"; };
 		29823E4E21EB4FB5001B5B9F /* RepoDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoDetailsVC.swift; sourceTree = "<group>"; };
 		29823E5221EB5372001B5B9F /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		29823E5621EB5439001B5B9F /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
@@ -64,13 +70,15 @@
 		29823E6521EB75DE001B5B9F /* RepoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoTableViewCell.swift; sourceTree = "<group>"; };
 		29823E6921EBB8D7001B5B9F /* RepoDetailVMContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDetailVMContract.swift; sourceTree = "<group>"; };
 		29823E6B21EBB8E6001B5B9F /* RepoDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDetailCoordinator.swift; sourceTree = "<group>"; };
-		29823E7121EBCA58001B5B9F /* UserDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewModel.swift; sourceTree = "<group>"; };
+		29823E7121EBCA58001B5B9F /* UserDetailVMContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailVMContract.swift; sourceTree = "<group>"; };
 		29823E7321EBDBB8001B5B9F /* RepoDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoDetailViewModel.swift; sourceTree = "<group>"; };
 		29823E7521EBDBE3001B5B9F /* RepoDetailModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoDetailModel.swift; sourceTree = "<group>"; };
 		29823E7721EBDD25001B5B9F /* SearchCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCoordinator.swift; sourceTree = "<group>"; };
+		29823E7B21EBE499001B5B9F /* OwnerDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerDetailViewModel.swift; sourceTree = "<group>"; };
+		29823E7F21EBE56E001B5B9F /* OwnerDetailModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OwnerDetailModel.swift; sourceTree = "<group>"; };
 		298ECE9F21E8884E00B98719 /* License.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = License.swift; sourceTree = "<group>"; };
 		298ECEA021E8884E00B98719 /* SearchResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResults.swift; sourceTree = "<group>"; };
-		298ECEA121E8884E00B98719 /* UserProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		298ECEA121E8884E00B98719 /* OwnerProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OwnerProfile.swift; sourceTree = "<group>"; };
 		298ECEA221E8884E00B98719 /* CodeRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeRepository.swift; sourceTree = "<group>"; };
 		298ECEAC21E8D59F00B98719 /* RemoteContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteContext.swift; sourceTree = "<group>"; };
 		298ECEAE21E8DA8600B98719 /* Remote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Remote.swift; sourceTree = "<group>"; };
@@ -123,8 +131,12 @@
 				29823E5621EB5439001B5B9F /* AppCoordinator.swift */,
 				29823E7921EBDD76001B5B9F /* Search */,
 				29823E7A21EBDE05001B5B9F /* repoDetails */,
-				29823E7121EBCA58001B5B9F /* UserDetailViewModel.swift */,
-				29823E4D21EB4FB5001B5B9F /* UserDetailsVC.swift */,
+				29823E7121EBCA58001B5B9F /* UserDetailVMContract.swift */,
+				2944A6A221EC416A004B81DF /* OwnerDetailCoordinator.swift */,
+				29823E7B21EBE499001B5B9F /* OwnerDetailViewModel.swift */,
+				29823E7F21EBE56E001B5B9F /* OwnerDetailModel.swift */,
+				29823E4D21EB4FB5001B5B9F /* OwnerDetailsVC.swift */,
+				2944A6A021EC3FC0004B81DF /* UserDataCell.swift */,
 				298ECEB521E90E1200B98719 /* Repository */,
 				298ECEA921E88EA800B98719 /* models */,
 				29823E5821EB5CD4001B5B9F /* extensions */,
@@ -178,7 +190,7 @@
 				298ECEA221E8884E00B98719 /* CodeRepository.swift */,
 				298ECE9F21E8884E00B98719 /* License.swift */,
 				298ECEA021E8884E00B98719 /* SearchResults.swift */,
-				298ECEA121E8884E00B98719 /* UserProfile.swift */,
+				298ECEA121E8884E00B98719 /* OwnerProfile.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -349,15 +361,19 @@
 				29823E7821EBDD25001B5B9F /* SearchCoordinator.swift in Sources */,
 				29823E7421EBDBB9001B5B9F /* RepoDetailViewModel.swift in Sources */,
 				298ECEBF21E9202A00B98719 /* Repository.swift in Sources */,
+				29823E8021EBE56E001B5B9F /* OwnerDetailModel.swift in Sources */,
+				2944A6A121EC3FC0004B81DF /* UserDataCell.swift in Sources */,
 				29823E5A21EB5CD4001B5B9F /* Storyboard.swift in Sources */,
-				298ECEA521E8884E00B98719 /* UserProfile.swift in Sources */,
+				298ECEA521E8884E00B98719 /* OwnerProfile.swift in Sources */,
 				298ECEA421E8884E00B98719 /* SearchResults.swift in Sources */,
 				298ECEA321E8884E00B98719 /* License.swift in Sources */,
 				29823E6C21EBB8E6001B5B9F /* RepoDetailCoordinator.swift in Sources */,
 				29823E4F21EB4FB5001B5B9F /* SearchVC.swift in Sources */,
+				2944A6A321EC416A004B81DF /* OwnerDetailCoordinator.swift in Sources */,
 				298ECEB221E8DC3D00B98719 /* RoutersProtocol.swift in Sources */,
-				29823E7221EBCA58001B5B9F /* UserDetailViewModel.swift in Sources */,
-				29823E5021EB4FB5001B5B9F /* UserDetailsVC.swift in Sources */,
+				29823E7221EBCA58001B5B9F /* UserDetailVMContract.swift in Sources */,
+				29823E7C21EBE499001B5B9F /* OwnerDetailViewModel.swift in Sources */,
+				29823E5021EB4FB5001B5B9F /* OwnerDetailsVC.swift in Sources */,
 				29823E6621EB75DE001B5B9F /* RepoTableViewCell.swift in Sources */,
 				298ECEAD21E8D59F00B98719 /* RemoteContext.swift in Sources */,
 			);

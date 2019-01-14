@@ -17,7 +17,7 @@ protocol DetailViewModelViewDelegate: class
 protocol DetailViewModelCoordinatorDelegate: class
 {
     func detailViewModelDidEnd(_ viewModel: RepoDetailViewModelContract)
-    func showOwnerProfile(owner: UserProfile)
+    func showOwnerProfile(owner: OwnerProfile)
 }
 
 protocol RepoDetailViewModelContract
