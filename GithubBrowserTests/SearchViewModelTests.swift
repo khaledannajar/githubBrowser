@@ -12,6 +12,8 @@ import GithubBrowser
 class SearchViewModelTests: XCTestCase {
     
     var vm: SearchViewModel!
+    var currentExpectaion: XCTestExpectation?
+    let testMessageForUseItemAtZeroIndex = "test Use One Item At Zero Index"
     
     override func setUp() {
         vm = SearchViewModel()
@@ -52,6 +54,52 @@ class SearchViewModelTests: XCTestCase {
         vm.model = dummyModel
         vm.search(token: "forced error token")
         XCTAssertEqual(message, vm.errorMessage)
+    }
+    
+    func testOneItemAtZeroIndex() {
+        let dummyModel = DummySearchModel()
+        vm.model = dummyModel
+        let name = "First repo test"
+        dummyModel.searchResults = createSearchResultWithOneItem(name: name)
+        vm.search(token: "forced one item list")
+        let item = vm.itemAtIndex(0)
+        XCTAssertEqual(item?.name, name)
+    }
+    
+    func testUseOneItemAtZeroIndex() {
+        let dummyModel = DummySearchModel()
+        vm.model = dummyModel
+        let name = testMessageForUseItemAtZeroIndex
+        dummyModel.searchResults = createSearchResultWithOneItem(name: name)
+        vm.search(token: "forced one item list")
+        vm.coordinatorDelegate = self
+        currentExpectaion =  expectation(description: name)
+        vm.useItemAtIndex(0)
+        waitForExpectations(timeout: 1) { (error) in
+            self.vm.coordinatorDelegate = nil
+        }
+    }
+}
+
+extension SearchViewModelTests: ListViewModelCoordinatorDelegate {
+    func listViewModelDidSelectRepo(_ viewModel: ListViewModel, data: CodeRepository) {
+        XCTAssertEqual(testMessageForUseItemAtZeroIndex, data.name)
+        currentExpectaion?.fulfill()
+    }
+    
+    func listViewModelDidSelectUser(_ viewModel: ListViewModel, data: OwnerProfile) {
+        
+    }
+}
+
+// Helper
+extension SearchViewModelTests {
+    func createSearchResultWithOneItem(name: String) -> SearchResults {
+        let searchResult = SearchResults()
+        let repo = CodeRepository()
+        repo.name = name
+        searchResult.repos = [repo]
+        return searchResult
     }
 }
 
