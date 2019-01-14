@@ -26,6 +26,11 @@ protocol RepoDetailViewModelContract
     var viewDelegate: DetailViewModelViewDelegate? { get set }
     var coordinatorDelegate: DetailViewModelCoordinatorDelegate? { get set}
     var detail: CodeRepository? { get }
+    var numberOfItems: Int { get }
+    func itemAtIndex(_ index: Int) -> Pair?
+    func useItemAt(index: Int)
     func done()
     func showOwnerProfile()
+    var title: String { get }
 }
+

@@ -34,21 +34,21 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3uW-h4-xRe">
-                                                    <rect key="frame" x="58" y="5" width="33.5" height="20.5"/>
+                                                    <rect key="frame" x="95" y="5" width="33.5" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aLu-Cq-v5M">
-                                                    <rect key="frame" x="58" y="25.5" width="44" height="14.5"/>
+                                                    <rect key="frame" x="95" y="25.5" width="44" height="14.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="happy" id="51c-pN-EoA">
-                                                    <rect key="frame" x="15" y="7" width="28" height="28"/>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" image="github4" id="51c-pN-EoA">
+                                                    <rect key="frame" x="15" y="0.0" width="65" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
@@ -97,25 +97,79 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="repo details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zog-UX-d6t">
-                                <rect key="frame" x="142" y="20" width="91" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9zd-UU-N02">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RepoDetailsCell" textLabel="Ah6-rx-Fbp" detailTextLabel="3pb-Jq-AjU" style="IBUITableViewCellStyleValue1" id="3hG-2d-5SH" customClass="RepoDetailsCell" customModule="GithubBrowser" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3hG-2d-5SH" id="Y8d-ZZ-Kum">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ah6-rx-Fbp">
+                                                    <rect key="frame" x="15" y="12" width="33.5" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3pb-Jq-AjU">
+                                                    <rect key="frame" x="301" y="12" width="59" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="attribureValueLabel" destination="3pb-Jq-AjU" id="XOO-pB-3RH"/>
+                                            <outlet property="attributeNameLabel" destination="Ah6-rx-Fbp" id="TfA-9F-8G0"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RepoDetailsOwnerCell" rowHeight="150" id="lX7-65-MOK" customClass="RepoDetailsOwnerCell" customModule="GithubBrowser" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="72" width="375" height="150"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lX7-65-MOK" id="sdh-O1-VQd">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="149.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="github4" translatesAutoresizingMaskIntoConstraints="NO" id="Y5H-sh-mFK">
+                                                    <rect key="frame" x="8" y="0.0" width="359" height="149.5"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Y5H-sh-mFK" firstAttribute="leading" secondItem="sdh-O1-VQd" secondAttribute="leading" constant="8" id="1mj-Ev-OYd"/>
+                                                <constraint firstItem="Y5H-sh-mFK" firstAttribute="top" secondItem="sdh-O1-VQd" secondAttribute="top" id="UQG-Mg-Fz8"/>
+                                                <constraint firstAttribute="bottom" secondItem="Y5H-sh-mFK" secondAttribute="bottom" id="sa7-6l-WPi"/>
+                                                <constraint firstAttribute="trailing" secondItem="Y5H-sh-mFK" secondAttribute="trailing" constant="8" id="uC4-xN-nhB"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="avatarImage" destination="Y5H-sh-mFK" id="xZF-2h-wlX"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Zog-UX-d6t" firstAttribute="leading" secondItem="Sjv-AE-VWU" secondAttribute="leading" constant="142" id="6uQ-5p-2Ji"/>
-                            <constraint firstItem="Zog-UX-d6t" firstAttribute="centerX" secondItem="Sjv-AE-VWU" secondAttribute="centerX" id="KVr-bV-IeQ"/>
-                            <constraint firstItem="Zog-UX-d6t" firstAttribute="top" secondItem="Sjv-AE-VWU" secondAttribute="top" id="c9r-Qx-k4u"/>
+                            <constraint firstItem="9zd-UU-N02" firstAttribute="leading" secondItem="Sjv-AE-VWU" secondAttribute="leading" id="5iO-St-cL9"/>
+                            <constraint firstItem="9zd-UU-N02" firstAttribute="bottom" secondItem="Sjv-AE-VWU" secondAttribute="bottom" id="GCW-LV-GV6"/>
+                            <constraint firstItem="9zd-UU-N02" firstAttribute="trailing" secondItem="Sjv-AE-VWU" secondAttribute="trailing" id="WR7-HU-vFl"/>
+                            <constraint firstItem="9zd-UU-N02" firstAttribute="top" secondItem="Sjv-AE-VWU" secondAttribute="top" id="baI-mK-OrG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Sjv-AE-VWU"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="9zd-UU-N02" id="daL-0S-kVh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GJo-BW-tNs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1366" y="111"/>
+            <point key="canvasLocation" x="1365.5999999999999" y="110.19490254872565"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="FkE-LF-KlA">
@@ -243,6 +297,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="github4" width="700" height="467"/>
         <image name="happy" width="28" height="28"/>
     </resources>
 </document>
