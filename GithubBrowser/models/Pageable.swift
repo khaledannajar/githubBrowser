@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Pageable {
+public struct Pageable {
     let pageSize: Int
     let pageNo: Int
     init(pageSize: Int, pageNo: Int) {

@@ -8,21 +8,21 @@
 
 import Foundation
 
-protocol OwnerModel {
+public protocol OwnerModel {
     var detail: OwnerProfile? { get }
     func getRepositories(user: String, completion: @escaping ([CodeRepository]?, Error?) -> Void)
 }
 
-class OwnerDetailModel: OwnerModel {
+public class OwnerDetailModel: OwnerModel {
     
-    var detail: OwnerProfile?
+    public var detail: OwnerProfile?
     var repository: Repository
-    init(userProfile: OwnerProfile, repository: Repository) {
+    public init(userProfile: OwnerProfile, repository: Repository) {
         detail = userProfile
         self.repository = repository
     }
     
-    func getRepositories(user: String, completion: @escaping ([CodeRepository]?, Error?) -> Void) {
+    public func getRepositories(user: String, completion: @escaping ([CodeRepository]?, Error?) -> Void) {
         repository.getRepositories(user: user, completion: completion)
     }
     

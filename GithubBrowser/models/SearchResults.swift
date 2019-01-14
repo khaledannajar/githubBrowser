@@ -9,20 +9,20 @@ import Foundation
 import ObjectMapper
 
 
-class SearchResults : NSObject, NSCoding, Mappable {
+public class SearchResults : NSObject, NSCoding, Mappable {
     
-    var incompleteResults : Bool?
-    var repos : [CodeRepository]?
-    var totalCount : Int?
+    public var incompleteResults : Bool?
+    public var repos : [CodeRepository]?
+    public var totalCount : Int?
     
     
     class func newInstance(map: Map) -> Mappable? {
         return SearchResults()
     }
-    required init?(map: Map){}
-    private override init(){}
+    required public init?(map: Map){}
+    public override init(){}
     
-    func mapping(map: Map)
+    public func mapping(map: Map)
     {
         incompleteResults <- map["incomplete_results"]
         repos <- map["items"]
@@ -34,7 +34,7 @@ class SearchResults : NSObject, NSCoding, Mappable {
      * NSCoding required initializer.
      * Fills the data from the passed decoder
      */
-    @objc required init(coder aDecoder: NSCoder)
+    @objc required public init(coder aDecoder: NSCoder)
     {
         incompleteResults = aDecoder.decodeObject(forKey: "incomplete_results") as? Bool
         repos = aDecoder.decodeObject(forKey: "items") as? [CodeRepository]
@@ -46,7 +46,7 @@ class SearchResults : NSObject, NSCoding, Mappable {
      * NSCoding required method.
      * Encodes mode properties into the decoder
      */
-    @objc func encode(with aCoder: NSCoder)
+    @objc public func encode(with aCoder: NSCoder)
     {
         if incompleteResults != nil{
             aCoder.encode(incompleteResults, forKey: "incomplete_results")

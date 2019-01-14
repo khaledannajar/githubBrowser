@@ -9,7 +9,7 @@ import Foundation
 import ObjectMapper
 
 
-class CodeRepository : NSObject, NSCoding, Mappable {
+public class CodeRepository : NSObject, NSCoding, Mappable {
     
     var archiveUrl : String?
     var archived : Bool?
@@ -89,10 +89,10 @@ class CodeRepository : NSObject, NSCoding, Mappable {
     class func newInstance(map: Map) -> Mappable? {
         return CodeRepository()
     }
-    required init?(map: Map){}
-    private override init(){}
+    required public init?(map: Map){}
+    public override init(){}
     
-    func mapping(map: Map)
+    public func mapping(map: Map)
     {
         archiveUrl <- map["archive_url"]
         archived <- map["archived"]
@@ -173,7 +173,7 @@ class CodeRepository : NSObject, NSCoding, Mappable {
      * NSCoding required initializer.
      * Fills the data from the passed decoder
      */
-    @objc required init(coder aDecoder: NSCoder)
+    @objc required public init(coder aDecoder: NSCoder)
     {
         archiveUrl = aDecoder.decodeObject(forKey: "archive_url") as? String
         archived = aDecoder.decodeObject(forKey: "archived") as? Bool
@@ -254,7 +254,7 @@ class CodeRepository : NSObject, NSCoding, Mappable {
      * NSCoding required method.
      * Encodes mode properties into the decoder
      */
-    @objc func encode(with aCoder: NSCoder)
+    @objc public func encode(with aCoder: NSCoder)
     {
         if archiveUrl != nil{
             aCoder.encode(archiveUrl, forKey: "archive_url")

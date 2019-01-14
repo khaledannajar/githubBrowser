@@ -29,7 +29,7 @@ class SearchCoordinator: Coordinator
     }
     func start() {
         searchVC = Storyboards.Main.viewController(viewControllerClass: SearchVC.self)
-        let viewModel =  MVVMCListViewModel()
+        let viewModel =  SearchViewModel()
         viewModel.model = repository
         viewModel.coordinatorDelegate = self
         searchVC?.viewModel = viewModel

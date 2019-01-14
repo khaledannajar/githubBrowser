@@ -9,7 +9,7 @@ import Foundation
 import ObjectMapper
 
 
-class License : NSObject, NSCoding, Mappable {
+public class License : NSObject, NSCoding, Mappable {
     
     var key : String?
     var name : String?
@@ -21,10 +21,10 @@ class License : NSObject, NSCoding, Mappable {
     class func newInstance(map: Map) -> Mappable? {
         return License()
     }
-    required init?(map: Map){}
+    required public init?(map: Map){}
     private override init(){}
     
-    func mapping(map: Map)
+    public func mapping(map: Map)
     {
         key <- map["key"]
         name <- map["name"]
@@ -38,7 +38,7 @@ class License : NSObject, NSCoding, Mappable {
      * NSCoding required initializer.
      * Fills the data from the passed decoder
      */
-    @objc required init(coder aDecoder: NSCoder)
+    @objc required public init(coder aDecoder: NSCoder)
     {
         key = aDecoder.decodeObject(forKey: "key") as? String
         name = aDecoder.decodeObject(forKey: "name") as? String
@@ -52,7 +52,7 @@ class License : NSObject, NSCoding, Mappable {
      * NSCoding required method.
      * Encodes mode properties into the decoder
      */
-    @objc func encode(with aCoder: NSCoder)
+    @objc public func encode(with aCoder: NSCoder)
     {
         if key != nil{
             aCoder.encode(key, forKey: "key")

@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct SearchParams {
+public struct SearchParams {
     let searchToken: String
     let pagable: Pageable
     init(searchToken: String, pagable: Pageable) {

@@ -9,20 +9,20 @@
 import Foundation
 
 
-class MVVMCListViewModel: ListViewModel {
+public class SearchViewModel: ListViewModel {
     
-    let pageSize = 10
-    var pageNo = 1
-    var searchToken = ""
-    var searchResults: SearchResults?
+    private let pageSize = 10
+    private var pageNo = 1
+    private var searchToken = ""
+    private var searchResults: SearchResults?
     
     /// The view itself: SearchVC
-    weak var viewDelegate: ListViewModelViewDelegate? {
+    public weak var viewDelegate: ListViewModelViewDelegate? {
         willSet {
             
         }
     }
-    weak var coordinatorDelegate: ListViewModelCoordinatorDelegate?
+    public weak var coordinatorDelegate: ListViewModelCoordinatorDelegate?
     
     fileprivate var items: [CodeRepository]? {
         didSet {
@@ -30,25 +30,29 @@ class MVVMCListViewModel: ListViewModel {
         }
     }
     
-    var model: Repository? {
+    public var model: Repository? {
         didSet {
             items = nil;
         }
     }
     
+    public var errorMessage: String?
     
-    var title: String {
+    public var title: String {
         return "Search"
     }
     
-    var numberOfItems: Int {
+    public var numberOfItems: Int {
         if let items = items {
             return items.count
         }
         return 0
     }
     
-    func itemAtIndex(_ index: Int) -> CodeRepository?
+    public init(){
+    }
+    
+    public func itemAtIndex(_ index: Int) -> CodeRepository?
     {
         if let items = items , items.count > index {
             return items[index]
@@ -56,24 +60,24 @@ class MVVMCListViewModel: ListViewModel {
         return nil
     }
     
-    func useItemAtIndex(_ index: Int)
+    public func useItemAtIndex(_ index: Int)
     {
         if let items = items, let coordinatorDelegate = coordinatorDelegate  , index < items.count {
             coordinatorDelegate.listViewModelDidSelectRepo(self, data: items[index])
         }
     }
     
-    func useOwnerProfile(owner: OwnerProfile) {
+    public func useOwnerProfile(owner: OwnerProfile) {
         coordinatorDelegate?.listViewModelDidSelectUser(self, data: owner)
     }
     
-    func search(token: String) {
+    public func search(token: String) {
         self.searchToken = token
         pageNo = 1
         doSearch()
     }
     
-    func getNext() {
+    public func getNext() {
         guard let repos = searchResults?.repos, let totalCount = searchResults?.totalCount, repos.count < totalCount else {
             return
         }
@@ -102,7 +106,8 @@ class MVVMCListViewModel: ListViewModel {
                     }
                 }
             } else if let error = error {
-                self?.viewDelegate?.errorMessageDidChange(self!, message: error.localizedDescription)
+                self?.errorMessage = error.localizedDescription
+                self?.viewDelegate?.errorMessageDidChange(self!)
             } else {
                 // error not known
                 debugPrint("Unknown error in searchRepositories")

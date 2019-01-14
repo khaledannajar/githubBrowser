@@ -8,19 +8,19 @@
 
 import Foundation
 
-protocol OwnerDetailViewModelViewDelegate: class
+public protocol OwnerDetailViewModelViewDelegate: class
 {
     func detailDidChange(viewModel: OwnerDetailViewModelContract)
     func repositoriesLoaded(viewModel: OwnerDetailViewModelContract)
 }
 
 
-protocol OwnerDetailViewModelCoordinatorDelegate: class
+public protocol OwnerDetailViewModelCoordinatorDelegate: class
 {
     func detailViewModelDidEnd(_ viewModel: OwnerDetailViewModelContract)
 }
 
-protocol OwnerDetailViewModelContract
+public protocol OwnerDetailViewModelContract
 {
     var model: OwnerModel? { get set }
     var viewDelegate: OwnerDetailViewModelViewDelegate? { get set }

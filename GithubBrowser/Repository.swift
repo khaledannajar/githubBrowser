@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol Repository {
+public protocol Repository {
     func getRepositories(user: String, completion: @escaping ([CodeRepository]?, Error?) -> Void)
     func getProfile(user: String, completion: @escaping (OwnerProfile?, Error?) -> Void)
     func searchRepositories(params: SearchParams, completion: @escaping (SearchResults?, Error?) -> Void)

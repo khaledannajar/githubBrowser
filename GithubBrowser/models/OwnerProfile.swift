@@ -30,7 +30,7 @@ struct CodingKeys {
     let url = "url"
 }
 
-class OwnerProfile : NSObject, NSCoding, Mappable {
+public class OwnerProfile : NSObject, NSCoding, Mappable {
     
     var avatarUrl : String?
     var bio : String?
@@ -68,10 +68,10 @@ class OwnerProfile : NSObject, NSCoding, Mappable {
     class func newInstance(map: Map) -> Mappable? {
         return OwnerProfile()
     }
-    required init?(map: Map){}
-    private override init(){}
+    required public init?(map: Map){}
+    public override init(){}
     
-    func mapping(map: Map)
+    public func mapping(map: Map)
     {
         avatarUrl <- map["avatar_url"]
         bio <- map["bio"]
@@ -111,7 +111,7 @@ class OwnerProfile : NSObject, NSCoding, Mappable {
      * NSCoding required initializer.
      * Fills the data from the passed decoder
      */
-    @objc required init(coder aDecoder: NSCoder)
+    @objc required public init(coder aDecoder: NSCoder)
     {
         avatarUrl = aDecoder.decodeObject(forKey: "avatar_url") as? String
         bio = aDecoder.decodeObject(forKey: "bio") as? String
@@ -151,7 +151,7 @@ class OwnerProfile : NSObject, NSCoding, Mappable {
      * NSCoding required method.
      * Encodes mode properties into the decoder
      */
-    @objc func encode(with aCoder: NSCoder)
+    @objc public func encode(with aCoder: NSCoder)
     {
         if avatarUrl != nil{
             aCoder.encode(avatarUrl, forKey: "avatar_url")

@@ -8,25 +8,25 @@
 
 import Foundation
 
-protocol ListViewModelViewDelegate: class
+public protocol ListViewModelViewDelegate: class
 {
     func itemsDidChange(viewModel: ListViewModel)
-    func errorMessageDidChange(_ viewModel: ListViewModel, message: String)
+    func errorMessageDidChange(_ viewModel: ListViewModel)
 }
 
-protocol ListViewModelCoordinatorDelegate: class
+public protocol ListViewModelCoordinatorDelegate: class
 {
     func listViewModelDidSelectRepo(_ viewModel: ListViewModel, data: CodeRepository)
     func listViewModelDidSelectUser(_ viewModel: ListViewModel, data: OwnerProfile)
 }
 
-protocol ListViewModel {
+public protocol ListViewModel {
     var model: Repository? { get set }
     var viewDelegate: ListViewModelViewDelegate? { get set }
     var coordinatorDelegate: ListViewModelCoordinatorDelegate? { get set}
     
     var title: String { get }
-    
+    var errorMessage: String? { get }
     var numberOfItems: Int { get }
     func itemAtIndex(_ index: Int) -> CodeRepository?
     func useItemAtIndex(_ index: Int)
@@ -35,7 +35,7 @@ protocol ListViewModel {
     func getNext()
 }
 
-protocol ListModel
+public protocol ListModel
 {
     func searchRepositories(params: SearchParams, completion: @escaping (SearchResults?, Error?) -> Void)
 }

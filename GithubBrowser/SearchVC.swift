@@ -108,9 +108,10 @@ extension SearchVC: ListViewModelViewDelegate {
         tableView.reloadData()
         hideLoadingView()
     }
-    func errorMessageDidChange(_ viewModel: ListViewModel, message: String) {
+    func errorMessageDidChange(_ viewModel: ListViewModel) {
+        
         //TODO: show error message
-        debugPrint(message)
+        debugPrint(viewModel.errorMessage)
         hideLoadingView()
     }
 }
