@@ -2,7 +2,9 @@ Github browser
 ==============
 
 This iOS app is written is swift and does search for repositories, gets repo
-owner details and gets repo details.
+owner details and gets repo details. The app implements MVVM-C architecture.
+
+ 
 
 The app fetches the data from these Endpoints:
 
@@ -69,3 +71,24 @@ License
 -------
 
 MIT
+
+Screenshots
+-----------
+
+Search results:
+
+![](images/searchResults.png)
+
+Repository details:
+
+![](images/repositoryDetails.png)
+
+Owner details:
+
+ 
+
+![](images/repositoryOwnerDetails.png)
+
+ 
+
+ 
