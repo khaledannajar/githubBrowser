@@ -91,10 +91,9 @@ extension SearchVC: UITableViewDelegate, UITableViewDataSource
         return cell
     }
     
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
-//    {
-//        viewModel?.useItemAtIndex((indexPath as NSIndexPath).row)
-//    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        viewModel?.useItemAtIndex((indexPath as NSIndexPath).row)
+    }
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         searchBar.resignFirstResponder()
     }
