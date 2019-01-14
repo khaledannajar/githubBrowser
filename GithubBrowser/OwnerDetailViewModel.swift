@@ -27,7 +27,11 @@ class OwnerDetailViewModel: OwnerDetailViewModelContract {
             }
         }
     }
-    public private(set) var errorMessage: String?
+    public private(set) var errorMessage: String? {
+        didSet {
+            viewDelegate?.errorMessageDidChange(self)
+        }
+    }
     func getRepositories(name: String) {
         model?.getRepositories(user: name, completion: { [weak self] (repos, error) in
             

@@ -12,7 +12,7 @@ public protocol OwnerDetailViewModelViewDelegate: class
 {
     func detailDidChange(viewModel: OwnerDetailViewModelContract)
     func repositoriesLoaded(viewModel: OwnerDetailViewModelContract)
-    func errorMessageDidChange(_ viewModel: ListViewModel)
+    func errorMessageDidChange(_ viewModel: OwnerDetailViewModelContract)
 }
 
 

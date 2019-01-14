@@ -100,11 +100,10 @@ extension OwnerDetailsVC: OwnerDetailViewModelViewDelegate {
         refreshDisplay()
         hideLoadingView()
     }
-    func errorMessageDidChange(_ viewModel: ListViewModel) {
+    func errorMessageDidChange(_ viewModel: OwnerDetailViewModelContract) {
         hideLoadingView()
-        //TODO: show error message
         if let message = viewModel.errorMessage {
-            debugPrint(message)
+            Utils.showError(vc: self, message: message)
         }
     }
 }
