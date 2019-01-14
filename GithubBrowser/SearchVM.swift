@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 public class SearchViewModel: ListViewModel {
     
     private let pageSize = 10
@@ -36,7 +35,11 @@ public class SearchViewModel: ListViewModel {
         }
     }
     
-    public var errorMessage: String?
+    public var errorMessage: String? {
+        didSet {
+            self.viewDelegate?.errorMessageDidChange(self)
+        }
+    }
     
     public var title: String {
         return "Search"
@@ -81,14 +84,13 @@ public class SearchViewModel: ListViewModel {
         guard let repos = searchResults?.repos, let totalCount = searchResults?.totalCount, repos.count < totalCount else {
             return
         }
-        // view.showLoadmoreIndicator()
         pageNo = pageNo + 1
         doSearch()
     }
     
     func doSearch() {
         guard searchToken.count > 0 else {
-            debugPrint("Search token is empty")
+            self.errorMessage = "Search token is empty"
             return
         }
         let pagable = Pageable(pageSize: pageSize, pageNo: pageNo)
@@ -107,10 +109,8 @@ public class SearchViewModel: ListViewModel {
                 }
             } else if let error = error {
                 self?.errorMessage = error.localizedDescription
-                self?.viewDelegate?.errorMessageDidChange(self!)
             } else {
-                // error not known
-                debugPrint("Unknown error in searchRepositories")
+                self?.errorMessage = "Unexpected error. Please try again."
             }
         })
     }
