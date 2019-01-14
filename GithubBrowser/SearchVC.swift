@@ -38,15 +38,9 @@ class SearchVC: UIViewController {
         refreshDisplay();
     }
 
-    func refreshDisplay()
-    {
-        if let viewModel = viewModel {
-            title = viewModel.title
-        } else {
-            title = ""
-        }
-        
-        if isLoaded {
+    func refreshDisplay() {
+        title = viewModel?.title ?? ""
+        if isLoaded && viewModel != nil {
             self.tableView.reloadData()
         }
     }

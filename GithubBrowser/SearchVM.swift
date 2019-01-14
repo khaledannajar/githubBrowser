@@ -38,7 +38,7 @@ class MVVMCListViewModel: ListViewModel {
     
     
     var title: String {
-        return "List"
+        return "Search"
     }
     
     var numberOfItems: Int {
