@@ -13,7 +13,7 @@ class RepoDetailViewModel: RepoDetailViewModelContract
     weak var viewDelegate: DetailViewModelViewDelegate?
     weak var coordinatorDelegate: DetailViewModelCoordinatorDelegate?
     
-    fileprivate(set) var detail: CodeRepository? {
+    private(set) var detail: CodeRepository? {
         didSet {
             viewDelegate?.detailDidChange(viewModel: self)
         }
