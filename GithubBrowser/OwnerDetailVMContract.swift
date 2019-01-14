@@ -29,5 +29,7 @@ public protocol OwnerDetailViewModelContract
     var numberOfItems: Int { get }
     func itemAtIndex(_ index: Int) -> CodeRepository?
     var title: String { get }
+    var detail: OwnerProfile? { get }
+    var avatarUrl: String? { get }
     func done()
 }

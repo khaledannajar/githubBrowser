@@ -25,7 +25,7 @@ class RepoTableViewCell: UITableViewCell {
     var item: CodeRepository? {
         didSet {
             repoNameLabel.text = item?.name ?? "Unknown"
-            ownerNameLabel.text = item?.userProfile?.name ?? "Unknown"
+            ownerNameLabel.text = item?.userProfile?.login ?? "Unknown"
             configureImageView()
         }
     }

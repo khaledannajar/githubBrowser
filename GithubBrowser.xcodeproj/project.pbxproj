@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2944A6A121EC3FC0004B81DF /* UserDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2944A6A021EC3FC0004B81DF /* UserDataCell.swift */; };
 		2944A6A321EC416A004B81DF /* OwnerDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2944A6A221EC416A004B81DF /* OwnerDetailCoordinator.swift */; };
 		2944A6AB21EC8B5C004B81DF /* SearchViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2944A6AA21EC8B5C004B81DF /* SearchViewModelTests.swift */; };
 		2944A6B721ECD3A7004B81DF /* RepoDetailsOwnerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2944A6B621ECD3A7004B81DF /* RepoDetailsOwnerCell.swift */; };
 		2944A6B921ECE2AB004B81DF /* RepoDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2944A6B821ECE2AB004B81DF /* RepoDetailsCell.swift */; };
 		2944A6BB21ECE30A004B81DF /* ViewableAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2944A6BA21ECE30A004B81DF /* ViewableAttribute.swift */; };
+		2944A6BD21ECF5CB004B81DF /* OwnerDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2944A6BC21ECF5CA004B81DF /* OwnerDataCell.swift */; };
 		295701B521E8709E0099D2ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295701B421E8709E0099D2ED /* AppDelegate.swift */; };
 		295701BA21E8709E0099D2ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 295701B821E8709E0099D2ED /* Main.storyboard */; };
 		295701BC21E870A00099D2ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 295701BB21E870A00099D2ED /* Assets.xcassets */; };
@@ -31,7 +31,7 @@
 		29823E6621EB75DE001B5B9F /* RepoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29823E6521EB75DE001B5B9F /* RepoTableViewCell.swift */; };
 		29823E6A21EBB8D7001B5B9F /* RepoDetailVMContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29823E6921EBB8D7001B5B9F /* RepoDetailVMContract.swift */; };
 		29823E6C21EBB8E6001B5B9F /* RepoDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29823E6B21EBB8E6001B5B9F /* RepoDetailCoordinator.swift */; };
-		29823E7221EBCA58001B5B9F /* UserDetailVMContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29823E7121EBCA58001B5B9F /* UserDetailVMContract.swift */; };
+		29823E7221EBCA58001B5B9F /* OwnerDetailVMContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29823E7121EBCA58001B5B9F /* OwnerDetailVMContract.swift */; };
 		29823E7421EBDBB9001B5B9F /* RepoDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29823E7321EBDBB8001B5B9F /* RepoDetailViewModel.swift */; };
 		29823E7621EBDBE3001B5B9F /* RepoDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29823E7521EBDBE3001B5B9F /* RepoDetailModel.swift */; };
 		29823E7821EBDD25001B5B9F /* SearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29823E7721EBDD25001B5B9F /* SearchCoordinator.swift */; };
@@ -62,7 +62,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2944A6A021EC3FC0004B81DF /* UserDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataCell.swift; sourceTree = "<group>"; };
 		2944A6A221EC416A004B81DF /* OwnerDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerDetailCoordinator.swift; sourceTree = "<group>"; };
 		2944A6A821EC8B5C004B81DF /* GithubBrowserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GithubBrowserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2944A6AA21EC8B5C004B81DF /* SearchViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModelTests.swift; sourceTree = "<group>"; };
@@ -70,6 +69,7 @@
 		2944A6B621ECD3A7004B81DF /* RepoDetailsOwnerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoDetailsOwnerCell.swift; sourceTree = "<group>"; };
 		2944A6B821ECE2AB004B81DF /* RepoDetailsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoDetailsCell.swift; sourceTree = "<group>"; };
 		2944A6BA21ECE30A004B81DF /* ViewableAttribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewableAttribute.swift; sourceTree = "<group>"; };
+		2944A6BC21ECF5CA004B81DF /* OwnerDataCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OwnerDataCell.swift; sourceTree = "<group>"; };
 		295701B121E8709E0099D2ED /* GithubBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		295701B421E8709E0099D2ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		295701B921E8709E0099D2ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -90,7 +90,7 @@
 		29823E6521EB75DE001B5B9F /* RepoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoTableViewCell.swift; sourceTree = "<group>"; };
 		29823E6921EBB8D7001B5B9F /* RepoDetailVMContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDetailVMContract.swift; sourceTree = "<group>"; };
 		29823E6B21EBB8E6001B5B9F /* RepoDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDetailCoordinator.swift; sourceTree = "<group>"; };
-		29823E7121EBCA58001B5B9F /* UserDetailVMContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailVMContract.swift; sourceTree = "<group>"; };
+		29823E7121EBCA58001B5B9F /* OwnerDetailVMContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerDetailVMContract.swift; sourceTree = "<group>"; };
 		29823E7321EBDBB8001B5B9F /* RepoDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoDetailViewModel.swift; sourceTree = "<group>"; };
 		29823E7521EBDBE3001B5B9F /* RepoDetailModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoDetailModel.swift; sourceTree = "<group>"; };
 		29823E7721EBDD25001B5B9F /* SearchCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCoordinator.swift; sourceTree = "<group>"; };
@@ -169,12 +169,12 @@
 				29823E5621EB5439001B5B9F /* AppCoordinator.swift */,
 				29823E7921EBDD76001B5B9F /* Search */,
 				29823E7A21EBDE05001B5B9F /* repoDetails */,
-				29823E7121EBCA58001B5B9F /* UserDetailVMContract.swift */,
+				29823E7121EBCA58001B5B9F /* OwnerDetailVMContract.swift */,
 				2944A6A221EC416A004B81DF /* OwnerDetailCoordinator.swift */,
 				29823E7B21EBE499001B5B9F /* OwnerDetailViewModel.swift */,
 				29823E7F21EBE56E001B5B9F /* OwnerDetailModel.swift */,
 				29823E4D21EB4FB5001B5B9F /* OwnerDetailsVC.swift */,
-				2944A6A021EC3FC0004B81DF /* UserDataCell.swift */,
+				2944A6BC21ECF5CA004B81DF /* OwnerDataCell.swift */,
 				298ECEB521E90E1200B98719 /* Repository */,
 				298ECEA921E88EA800B98719 /* models */,
 				29823E5821EB5CD4001B5B9F /* extensions */,
@@ -426,6 +426,7 @@
 				298ECEB721E9101000B98719 /* SearchParams.swift in Sources */,
 				29823E6221EB71C6001B5B9F /* UIImageExtension.swift in Sources */,
 				29823E5121EB4FB5001B5B9F /* RepoDetailsVC.swift in Sources */,
+				2944A6BD21ECF5CB004B81DF /* OwnerDataCell.swift in Sources */,
 				29823E6A21EBB8D7001B5B9F /* RepoDetailVMContract.swift in Sources */,
 				298ECEA621E8884E00B98719 /* CodeRepository.swift in Sources */,
 				298ECEB321E8DC3D00B98719 /* Router.swift in Sources */,
@@ -443,7 +444,6 @@
 				298ECEBF21E9202A00B98719 /* Repository.swift in Sources */,
 				2944A6B721ECD3A7004B81DF /* RepoDetailsOwnerCell.swift in Sources */,
 				29823E8021EBE56E001B5B9F /* OwnerDetailModel.swift in Sources */,
-				2944A6A121EC3FC0004B81DF /* UserDataCell.swift in Sources */,
 				29823E5A21EB5CD4001B5B9F /* Storyboard.swift in Sources */,
 				298ECEA521E8884E00B98719 /* OwnerProfile.swift in Sources */,
 				298ECEA421E8884E00B98719 /* SearchResults.swift in Sources */,
@@ -453,7 +453,7 @@
 				2944A6B921ECE2AB004B81DF /* RepoDetailsCell.swift in Sources */,
 				2944A6A321EC416A004B81DF /* OwnerDetailCoordinator.swift in Sources */,
 				298ECEB221E8DC3D00B98719 /* RoutersProtocol.swift in Sources */,
-				29823E7221EBCA58001B5B9F /* UserDetailVMContract.swift in Sources */,
+				29823E7221EBCA58001B5B9F /* OwnerDetailVMContract.swift in Sources */,
 				29823E7C21EBE499001B5B9F /* OwnerDetailViewModel.swift in Sources */,
 				29823E5021EB4FB5001B5B9F /* OwnerDetailsVC.swift in Sources */,
 				29823E6621EB75DE001B5B9F /* RepoTableViewCell.swift in Sources */,

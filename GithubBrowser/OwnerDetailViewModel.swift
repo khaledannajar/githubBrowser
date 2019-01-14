@@ -21,7 +21,7 @@ class OwnerDetailViewModel: OwnerDetailViewModelContract {
     var model: OwnerModel? {
         didSet {
             viewDelegate?.detailDidChange(viewModel: self)
-            if let name = model?.detail?.name {
+            if let name = model?.detail?.login {
                self.getRepositories(name: name)
             }
         }
@@ -32,6 +32,9 @@ class OwnerDetailViewModel: OwnerDetailViewModelContract {
             self?.viewDelegate?.repositoriesLoaded(viewModel: self!)
         })
     }
+    var detail: OwnerProfile? { return model?.detail }
+    var avatarUrl: String? { return detail?.avatarUrl }
+    
     func done() {
         coordinatorDelegate?.detailViewModelDidEnd(self)
     }

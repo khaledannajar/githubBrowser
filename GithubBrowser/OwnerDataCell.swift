@@ -8,7 +8,7 @@
 
 import UIKit
 
-class UserDataCell: UITableViewCell {
+class OwnerDataCell: UITableViewCell {
     
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!

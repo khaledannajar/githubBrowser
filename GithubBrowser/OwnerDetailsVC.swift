@@ -30,7 +30,6 @@ class OwnerDetailsVC: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
-        tableView.contentInset = UIEdgeInsets.init(top: 20, left: 0, bottom: 0, right: 0)
         hideLoadingView()
         isLoaded = true
         refreshDisplay();
@@ -77,10 +76,11 @@ extension OwnerDetailsVC: UITableViewDelegate, UITableViewDataSource
   
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-            let cell = tableView.dequeueReusableCell(withIdentifier: "RepoTableViewCell", for: indexPath) as! RepoTableViewCell
-            cell.item = viewModel?.itemAtIndex(indexPath.row)
-            cell.delegate = self
-            return cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "RightDetailCell", for: indexPath)
+        let item = viewModel?.itemAtIndex(indexPath.row)
+        cell.textLabel?.text = item?.name
+        cell.detailTextLabel?.text = item?.language
+        return cell
     }
 }
 
