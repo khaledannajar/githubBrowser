@@ -140,6 +140,19 @@
 			path = GithubBrowserTests;
 			sourceTree = "<group>";
 		};
+		2944A6BE21ED0FF0004B81DF /* ownerDetails */ = {
+			isa = PBXGroup;
+			children = (
+				29823E7121EBCA58001B5B9F /* OwnerDetailVMContract.swift */,
+				2944A6A221EC416A004B81DF /* OwnerDetailCoordinator.swift */,
+				29823E7B21EBE499001B5B9F /* OwnerDetailViewModel.swift */,
+				29823E7F21EBE56E001B5B9F /* OwnerDetailModel.swift */,
+				29823E4D21EB4FB5001B5B9F /* OwnerDetailsVC.swift */,
+				2944A6BC21ECF5CA004B81DF /* OwnerDataCell.swift */,
+			);
+			name = ownerDetails;
+			sourceTree = "<group>";
+		};
 		295701A821E8709E0099D2ED = {
 			isa = PBXGroup;
 			children = (
@@ -169,12 +182,7 @@
 				29823E5621EB5439001B5B9F /* AppCoordinator.swift */,
 				29823E7921EBDD76001B5B9F /* Search */,
 				29823E7A21EBDE05001B5B9F /* repoDetails */,
-				29823E7121EBCA58001B5B9F /* OwnerDetailVMContract.swift */,
-				2944A6A221EC416A004B81DF /* OwnerDetailCoordinator.swift */,
-				29823E7B21EBE499001B5B9F /* OwnerDetailViewModel.swift */,
-				29823E7F21EBE56E001B5B9F /* OwnerDetailModel.swift */,
-				29823E4D21EB4FB5001B5B9F /* OwnerDetailsVC.swift */,
-				2944A6BC21ECF5CA004B81DF /* OwnerDataCell.swift */,
+				2944A6BE21ED0FF0004B81DF /* ownerDetails */,
 				298ECEB521E90E1200B98719 /* Repository */,
 				298ECEA921E88EA800B98719 /* models */,
 				29823E5821EB5CD4001B5B9F /* extensions */,
@@ -201,9 +209,9 @@
 			children = (
 				29823E5D21EB5E3D001B5B9F /* SearchContract.swift */,
 				29823E7721EBDD25001B5B9F /* SearchCoordinator.swift */,
+				29823E5B21EB5DE0001B5B9F /* SearchVM.swift */,
 				29823E4C21EB4FB5001B5B9F /* SearchVC.swift */,
 				29823E6521EB75DE001B5B9F /* RepoTableViewCell.swift */,
-				29823E5B21EB5DE0001B5B9F /* SearchVM.swift */,
 			);
 			name = Search;
 			sourceTree = "<group>";
@@ -211,14 +219,14 @@
 		29823E7A21EBDE05001B5B9F /* repoDetails */ = {
 			isa = PBXGroup;
 			children = (
-				29823E4E21EB4FB5001B5B9F /* RepoDetailsVC.swift */,
-				2944A6BA21ECE30A004B81DF /* ViewableAttribute.swift */,
-				2944A6B821ECE2AB004B81DF /* RepoDetailsCell.swift */,
-				2944A6B621ECD3A7004B81DF /* RepoDetailsOwnerCell.swift */,
-				29823E6B21EBB8E6001B5B9F /* RepoDetailCoordinator.swift */,
 				29823E6921EBB8D7001B5B9F /* RepoDetailVMContract.swift */,
+				29823E6B21EBB8E6001B5B9F /* RepoDetailCoordinator.swift */,
 				29823E7321EBDBB8001B5B9F /* RepoDetailViewModel.swift */,
 				29823E7521EBDBE3001B5B9F /* RepoDetailModel.swift */,
+				2944A6BA21ECE30A004B81DF /* ViewableAttribute.swift */,
+				29823E4E21EB4FB5001B5B9F /* RepoDetailsVC.swift */,
+				2944A6B821ECE2AB004B81DF /* RepoDetailsCell.swift */,
+				2944A6B621ECD3A7004B81DF /* RepoDetailsOwnerCell.swift */,
 			);
 			name = repoDetails;
 			sourceTree = "<group>";
