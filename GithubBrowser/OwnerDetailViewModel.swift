@@ -64,9 +64,8 @@ class OwnerDetailViewModel: OwnerDetailViewModelContract {
         return nil
     }
     var title: String {
-        return model?.detail?.name ?? "Owner details"
+        return model?.detail?.name ?? model?.detail?.login ?? "Owner details"
     }
-    
     
     func getViewType(indexPath: IndexPath) -> OwnerDetailCellType {
         if indexPath.section == 0 {

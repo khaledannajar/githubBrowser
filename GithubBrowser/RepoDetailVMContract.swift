@@ -33,4 +33,3 @@ protocol RepoDetailViewModelContract
     func showOwnerProfile()
     var title: String { get }
 }
-
