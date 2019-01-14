@@ -53,13 +53,7 @@ class SearchVC: UIViewController {
         loadingView.isHidden = false
         loadingView.startAnimating()
     }
-    @IBAction func openRepo(_ sender: Any) {
-        
-    }
     
-    @IBAction func openUser(_ sender: Any) {
-        
-    }
 }
 
 extension SearchVC: UITableViewDelegate, UITableViewDataSource
