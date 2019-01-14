@@ -109,10 +109,11 @@ extension SearchVC: ListViewModelViewDelegate {
         hideLoadingView()
     }
     func errorMessageDidChange(_ viewModel: ListViewModel) {
-        
-        //TODO: show error message
-        debugPrint(viewModel.errorMessage)
         hideLoadingView()
+        //TODO: show error message
+        if let message = viewModel.errorMessage {
+            debugPrint(message)
+        }
     }
 }
 
