@@ -95,7 +95,7 @@ extension SearchVC: UITableViewDelegate, UITableViewDataSource
 
 extension SearchVC: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        if let searchToken = searchBar.text {
+        if let searchToken = searchBar.text, searchToken.count > 0 {
             viewModel?.search(token: searchToken)
             searchBar.resignFirstResponder()
             showLoadingView()
